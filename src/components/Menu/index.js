@@ -8,7 +8,6 @@ const Menu = () => {
         <li>Artistes</li>
         <li>Albums</li>
         <li>Crédits</li>
-        <li>Test commit Discord4</li>
       </ul>
     </aside>
   )
