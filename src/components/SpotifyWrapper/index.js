@@ -13,6 +13,7 @@ const SpotifyWrapper = ({ children }) => {
   return (
     <Context.Provider value={contextValue}>
       {children}
+      
     </Context.Provider>
   )
 }

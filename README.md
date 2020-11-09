@@ -2,6 +2,7 @@
 Antoine TARDIVEL
 Maëlle RABOUAN
 Justine MAGRY
+Yohann TONNERRE
 
 # Getting Started with Create React App
 
