@@ -9,9 +9,11 @@ const SpotifyWrapper = ({ children }) => {
   const token = useToken()
   const { deviceId } = useDevice({ token })
   const contextValue = useMemo(() => ({ deviceId, token }), [token, deviceId])
+  
 
   return (
     <Context.Provider value={contextValue}>
+    
       {children}
       
     </Context.Provider>
