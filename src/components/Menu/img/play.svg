@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="209" viewBox="0 0 180 209">
+  <defs>
+    <filter id="Polygone_10" x="0" y="0" width="180" height="209" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Polygone_10)">
+    <path id="Polygone_10-2" data-name="Polygone 10" d="M89.5,0,179,150H0Z" transform="translate(165 15) rotate(90)" fill="#fff"/>
+  </g>
+</svg>
