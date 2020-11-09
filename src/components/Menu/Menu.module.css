@@ -28,6 +28,13 @@ html{
     border-image-slice: 1;
 }
 
+.navigation_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .menu_list{
     display: flex;
     align-items: center;
@@ -59,8 +66,7 @@ html{
 .active_element{
     position: absolute;
     bottom: 0;
-    left: 15%;;
-    z-index: 5;
+    left: 15%;
     transition: .2s;
     height: 10%;
     transform: translateX(-50%);

@@ -25,7 +25,7 @@ const MenuNavigation = () => {
       
     }
     return (
-      <div className={styles.menu_container}>
+      <div className={styles.navigation_container}>
           <ul className={styles.menu_list}>
               <li id="link1"><Link onClick={() => addActive('1')} className={styles.link} to='/'><img src={logoHome}/>Accueil</Link></li>
               <li id="link2"><Link onClick={() => addActive('2')} className={styles.link} to='/Recherche'><img src={logoResearch}/>Rechercher</Link></li>
