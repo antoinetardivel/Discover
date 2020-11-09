@@ -17,6 +17,7 @@ const MenuAudioPlayer = () => {
       
         if(heartImg.src.includes(heart)){
             heartImg.setAttribute('src', whiteHeart);
+            console.log(MenuProgressBar)
         }
         else{
             heartImg.setAttribute('src', heart);
