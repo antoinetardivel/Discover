@@ -1,5 +1,5 @@
 import './App.css'
-import SpotifyWrapper from 'components/SpotifyWrapper';
+// import SpotifyWrapper from 'components/SpotifyWrapper';
 import {BrowserRouter as Router , Switch, Route} from 'react-router-dom';
 
 
@@ -13,7 +13,7 @@ import Playlist from './pages/PlaylistPage/Playlist'
 
 function App() {
   return (
-    <SpotifyWrapper>
+   /* <SpotifyWrapper> */
       <div className="App">
           <Router>
               <Switch>
@@ -27,7 +27,7 @@ function App() {
             <Nav />
           </Router>
       </div>
-    </SpotifyWrapper>
+    /* </SpotifyWrapper> */
   );
 }
 
