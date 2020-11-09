@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Menu.module.css'
+import MenuProgressBar from './MenuProgressBar'
 
 import pochette from './img/test_pochette.svg'
 import heart from './img/heart.svg'
@@ -11,8 +12,6 @@ import play from './img/play.svg'
 
 const MenuAudioPlayer = () => {
 
-
-
     const changeHeart = () => {
         const heartImg = document.getElementById('heart');
       
@@ -22,7 +21,6 @@ const MenuAudioPlayer = () => {
         else{
             heartImg.setAttribute('src', heart);
         }
-      
     }
 
     const changePause = () => {
@@ -34,7 +32,6 @@ const MenuAudioPlayer = () => {
         else{
             pauseImg.setAttribute('src', pause);
         }
-      
     }
    
     return (
@@ -49,6 +46,7 @@ const MenuAudioPlayer = () => {
                     <img id="heart" onClick={()=> changeHeart()} src={heart} />
                     <img id="pause" onClick={()=> changePause()} src={pause} />
                 </div>
+                <MenuProgressBar/>
             </div>
         </div>
   
