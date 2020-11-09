@@ -7,9 +7,7 @@ const Home = () => {
   // const { deviceId, token } = useContext(SpotifyContext);
   return (
     <div className={styles.container}>
-      <Menu />
-
-      Page d'accueil
+      <h1>Page d'accueil</h1>
     </div>
   )
 }
