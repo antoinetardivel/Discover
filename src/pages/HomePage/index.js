@@ -1,4 +1,5 @@
 import React from 'react'
+import Menu from 'components/Menu'
 // import { SpotifyContext } from 'components/SpotifyWrapper'
 import styles from './Home.module.css'
 
