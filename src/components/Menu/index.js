@@ -11,7 +11,7 @@ const Menu = () => {
   
   return (
     <div className={styles.menu_container}>
-        {/* <MenuAudioPlayer /> */}
+        <MenuAudioPlayer />
         <MenuNavigation />
     </div>
 
