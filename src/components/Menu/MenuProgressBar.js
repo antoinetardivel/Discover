@@ -8,11 +8,21 @@ class MenuProgressBar extends Component{
     componentDidMount(){
         let i = 0;
         const progressBar = document.getElementById('progress');
-        let musicLength = 240;
+        let musicLength = 180;
 
-        setInterval(()=>{
-            progressBar.style.width = i/musicLength * 100 + "%";
+        const count = setInterval(()=>{
             i++;
+            progressBar.style.width = i/musicLength * 100 + "%";
+            console.log(progressBar.style.width);
+            if(i/musicLength * 100 >= 100){
+                clearInterval(count);
+                i = 0;
+                progressBar.style.transitionDuration = "0s";
+                progressBar.style.width = i/musicLength * 100 + "%";
+                setTimeout(()=>{
+                    progressBar.style.transitionDuration = "1s";
+                },1000)
+            }
         },1000)
 
 
