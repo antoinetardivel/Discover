@@ -88,3 +88,7 @@
 .music_artist_container p{
     color: #fff;
 }
+
+.music_artist_container p:first-child{
+    font-size: 1.4rem;
+}
