@@ -9,10 +9,10 @@ const Menu = () => {
     <div className="nav-container">
             <div className='nav'>
                 <ul className='navLinks'>
-                    <li><Link style={navStyle} to='/'><img src="/logo/home.svg" alt=""/>Accueil</Link></li>
-                    <li><Link style={navStyle} to='/Search'><img src="/logo/rechercher.svg" alt=""/>Rechercher</Link></li>
-                    <li><Link style={navStyle} to='/Top10'><img src="/logo/top.svg" alt=""/>Top 10</Link></li>
-                    <li><Link style={navStyle} to='/Account'><img src="/logo/user.svg" alt=""/>Compte</Link></li>
+                    <li><Link style={navStyle} to='/'>Accueil</Link></li>
+                    <li><Link style={navStyle} to='/Recherche'>Rechercher</Link></li>
+                    <li><Link style={navStyle} to='/Top10'>Top 10</Link></li>
+                    <li><Link style={navStyle} to='/Compte'>Compte</Link></li>
                 </ul>
             </div>
         </div>

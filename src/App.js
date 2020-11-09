@@ -3,9 +3,9 @@ import SpotifyWrapper from 'components/SpotifyWrapper';
 import {BrowserRouter as Router , Switch, Route} from 'react-router-dom';
 
 
-import Home from 'pages/Home';
+import Home from 'pages/HomePage';
 import Nav from './components/Menu/index'
-import Account from './pages/UserAccount/Account'
+import Account from './pages/UserPage/Account'
 import Top10 from './pages/Top10Page/Top10'
 import Search from './pages/SearchPage/Search'
 import Artist from './pages/ArtistPage/Artist'
@@ -18,10 +18,10 @@ function App() {
           <Router>
               <Switch>
                 <Route path='/' exact component={Home} />
-                <Route path='/Account' component={Account} />
+                <Route path='/Compte' component={Account} />
                 <Route path='/Top10' component={Top10} />
-                <Route path='/Search' component={Search} />
-                <Route path='/Artist' component={Artist} />
+                <Route path='/Recherche' component={Search} />
+                <Route path='/Artiste' component={Artist} />
                 <Route path='/Playlist' component={Playlist} />
               </Switch>
             <Nav />
