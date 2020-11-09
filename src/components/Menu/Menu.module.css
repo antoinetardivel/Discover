@@ -11,7 +11,19 @@ html{
     height: auto;
     width: 100%;
     background-color: #181818;
-    border-bottom: 5px solid;
+   
+}
+
+
+.menu_container::after{
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 3px);
+    top: 0;
+    left: 0; 
+    border-bottom: 3px solid;
     border-image-source: linear-gradient(45deg,#28F299, #0BB5E1);
     border-image-slice: 1;
 }
@@ -40,4 +52,16 @@ html{
 .link{
     color: #E8DFDF;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.active_element{
+    position: absolute;
+    bottom: 0;
+    left: 15%;;
+    z-index: 5;
+    transition: .2s;
+    height: 10%;
+    transform: translateX(-50%);
 }
