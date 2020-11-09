@@ -1,6 +1,7 @@
 ## Contributors
 Antoine TARDIVEL
 Maëlle RABOUAN
+Justine MAGRY
 
 # Getting Started with Create React App
 
