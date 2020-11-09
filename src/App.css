@@ -3,11 +3,16 @@
     --primary-color: #007bff;
     --secondary-color: #F68D28;
   }
+
 * {
     margin: 0;
     padding: 0;
     list-style-type: none;
     text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
 }
 .App {
     min-height: 100vh;
