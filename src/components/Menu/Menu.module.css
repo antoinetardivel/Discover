@@ -1,8 +1,11 @@
-
+html{
+    font-size: 62.5%;
+}
 .menu_container{
     display: flex;
     align-items: center;
     position: fixed;
+    justify-content: center;
     bottom: 0;
     left: 0;
     height: auto;
@@ -16,8 +19,8 @@
 .menu_list{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: space-around;
+    width: 90%;
     padding: 0;
     margin: 0;
     height: 10vh;
@@ -26,7 +29,12 @@
 .menu_list li{
     list-style-type: none;
     display: flex;
+    flex-direction: column;
+}
 
+.menu_list li a{
+    margin-top: .5rem;;
+    font-size: .9rem;
 }
 
 .link{
