@@ -5,9 +5,13 @@
     border-radius: 25px;
     margin: auto;
     display: block;
+    font-family: 'Poppins';
+    font-weight: 400;
+    box-shadow: 0 0 0 0 transparent;
+    transition: .4s;
 }
 
 .btn_gradient:focus{
     outline: none;
-    box-shadow: ;
+    box-shadow: 0 0 5px 0 var(--green);
 }
