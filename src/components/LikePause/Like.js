@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, useState} from 'react'
 
 
 import heart from './img/heart.svg'
@@ -6,32 +6,29 @@ import whiteHeart from './img/white_heart.svg'
 
 
 
-class Like extends Component{
+
+const Like = ()=>{
+
+    const [src,updateSrc] = useState(heart);
 
 
-    render(){
-       
 
-        const changeLike = () => {
-            const pauseImg = document.getElementById('like');
-            console.log(pauseImg);
-            if(pauseImg.src.includes(whiteHeart)){
-                pauseImg.setAttribute('src', heart);
-            }
-            else{
-                pauseImg.setAttribute('src', whiteHeart);
-            }
+    const changeLike = () => {
+        if(src === whiteHeart){
+            updateSrc(heart);
         }
-    
-        return (
-            <div>
-                <img id="like" alt="" onClick={()=> changeLike()} src={heart} />
-            </div>
-    
-        )
+        else{
+            updateSrc(whiteHeart);
+        }
+        
     }
-    
-  }
+
+    return(
+        <div>
+            <img onClick={changeLike} src={src} alt=""/>
+        </div>
+    )
+}
 
 
   export default Like
