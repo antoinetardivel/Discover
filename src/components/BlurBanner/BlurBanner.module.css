@@ -1,0 +1,18 @@
+.blur_img_container{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+.blur_img_container img{
+    position: absolute;
+    filter: blur(2px) grayscale(.5);
+    transform: translate(-50%, -50%) scale(5);
+    top: 20%;
+    left: 50%;
+}

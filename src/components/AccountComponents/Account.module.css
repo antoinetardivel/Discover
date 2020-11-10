@@ -15,7 +15,7 @@
     margin-top: 2.8rem;
 }
 
-.profil_img_container:first-child{
+.profil_img_container img:first-child{
     border-radius: 50%;
 }
 
@@ -32,6 +32,7 @@
     width: 100%;
     justify-content: space-evenly;
     text-align: center;
+    color: var(--white);
 }
 
 
