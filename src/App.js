@@ -3,7 +3,7 @@ import './App.css'
 import {BrowserRouter as Router , Switch, Route} from 'react-router-dom';
 
 
-import Home from 'pages/HomePage';
+import Home from 'pages/HomePage/Home';
 import Nav from './components/Menu/index'
 import Account from './pages/UserPage/Account'
 import Top10 from './pages/Top10Page/Top10'
