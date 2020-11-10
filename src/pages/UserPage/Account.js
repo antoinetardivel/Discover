@@ -1,9 +1,10 @@
 import React from 'react';
+import AccountComponents from '../../components/AccountComponents/index'
 
 function Account() {
     return(
         <div>
-            <h1>User Account</h1>
+            <AccountComponents/>
         </div>
     );
   }

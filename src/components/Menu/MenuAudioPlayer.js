@@ -18,6 +18,12 @@ class MenuAudioPlayer extends Component{
             showMe:true
         }
     }
+
+    operation(){
+        this.setState({
+            showMe: !this.state.showMe
+        })
+    }
     render(){
         
     

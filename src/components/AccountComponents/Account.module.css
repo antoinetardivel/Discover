@@ -1,0 +1,44 @@
+.account_container{
+    width: 100%; 
+}
+
+.account_banner{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profil_img_container{
+    position: relative;
+    margin-top: 2.8rem;
+}
+
+
+.profil_img_container img:nth-child(2){
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+}
+
+.banner_info_container{
+    margin-top: 1.8rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+
+
+.account_content_container{
+    padding: 3rem;
+    background : linear-gradient(to top, #040404,#404040);
+    border-top-right-radius: 50px;
+    min-height: 200vh;
+}
+
+.morceaux_plus_ecoutes{
+    color: var(--white);
+}
