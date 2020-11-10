@@ -15,8 +15,10 @@ import album5 from './img/album5.png'
         function EachPlaylist(props) {
             return(
                 <div className={styles.each_playlist}>
-                   <img alt="" src={props.imgName}/>
-                   <p>{props.playlistName}</p>
+                    <div>
+                        <img alt="" src={props.imgName}/>
+                        <p>{props.playlistName}</p>
+                   </div>
                 </div>
             )
         }

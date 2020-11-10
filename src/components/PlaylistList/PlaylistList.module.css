@@ -1,6 +1,6 @@
 .playlist_container{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-top: 2.4rem;
 }
@@ -11,7 +11,24 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+    width: 33.3%;
 }
+
+.each_playlist div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.each_playlist div img{
+    width: 100%;
+}
+
+
+
+
 
 .each_playlist p{
     color: var(--white);
