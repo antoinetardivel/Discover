@@ -7,11 +7,13 @@ function Search() {
         <div>
            <div className={style.SearchHierarchy}>
                     <div className={style.bar}>
-                    <img src={Loupe}/>
+                    <img className={style.Loupe}src={Loupe}/>
                     <h1 className={style.titre}>Recherche</h1>
                     </div>
 
-                    <div className={style.content}></div>
+                    <div className={style.content}>
+                        
+                    </div>
            </div>
             
             
