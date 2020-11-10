@@ -1,7 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import MenuNavigation from './MenuNavigation'
-import MenuAudioPlayer from './MenuAudioPlayer'
 import styles from './Menu.module.css'
 
 

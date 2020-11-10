@@ -27,12 +27,12 @@ const MenuNavigation = () => {
     return (
       <div className={styles.navigation_container}>
           <ul className={styles.menu_list}>
-              <li id="link1"><Link onClick={() => addActive('1')} className={styles.link} to='/'><img src={logoHome}/>Accueil</Link></li>
-              <li id="link2"><Link onClick={() => addActive('2')} className={styles.link} to='/Recherche'><img src={logoResearch}/>Rechercher</Link></li>
-              <li id="link3"><Link onClick={() => addActive('3')} className={styles.link} to='/Top10'><img src={logoTop}/>Top 10</Link></li>
-              <li id="link4"><Link onClick={() => addActive('4')} className={styles.link} to='/Compte'><img src={logoUser}/>Compte</Link></li>
+              <li id="link1"><Link onClick={() => addActive('1')} className={styles.link} to='/'><img src={logoHome} alt=""/>Accueil</Link></li>
+              <li id="link2"><Link onClick={() => addActive('2')} className={styles.link} to='/Recherche'><img src={logoResearch} alt=""/>Rechercher</Link></li>
+              <li id="link3"><Link onClick={() => addActive('3')} className={styles.link} to='/Top10'><img src={logoTop} alt=""/>Top 10</Link></li>
+              <li id="link4"><Link onClick={() => addActive('4')} className={styles.link} to='/Compte'><img src={logoUser} alt=""/>Compte</Link></li>
           </ul>
-          <img id="element" className={styles.active_element} src={activeElement}/>
+          <img id="element" className={styles.active_element} src={activeElement} alt=""/>
       </div>
   
           

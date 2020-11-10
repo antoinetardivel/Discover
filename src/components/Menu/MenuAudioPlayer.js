@@ -29,7 +29,7 @@ class MenuAudioPlayer extends Component{
     
         return (
             <div className={styles.audio_player_container}>
-                <img className={styles.audio_player_img} src={pochette} />
+                <img className={styles.audio_player_img} src={pochette} alt="" />
                 <div className={styles.music_artist_like_pause_container}>
                     <div className={styles.music_artist_container}>
                         <p>In Lights</p>
