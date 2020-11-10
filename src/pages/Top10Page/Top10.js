@@ -31,7 +31,7 @@ function Top10() {
                         imageArtist={ImageArtistMoody} 
                         presArtist="Moody, de son vrai prénom Loïc, est originaire de Agen, et a commencé la musique à l'âge de 15 ans. Auteur de l'EP  Flawless Portrait, il a publié son dernier..." 
                         musicName='Monarque' 
-                        artistName='Moody2' />  
+                        artistName='Moody2' />
                 </div>
                 <div className={Styles.MusicsRowContener}>
                     <div className={Styles.first}>

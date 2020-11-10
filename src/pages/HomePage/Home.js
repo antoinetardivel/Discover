@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 // import { SpotifyContext } from 'components/SpotifyWrapper'
 import CoverBlur from 'components/CoverBlur'
 import TopHome from 'components/TopHome'
+import ArtistBubble from 'components/ArtistBubble'
 import styles from './Home.module.css'
-import DiscoveryPlaylist from './img/DiscoveryPlaylist.png'
+import nekfeu from './img/nekfeu.png'
 
 const Home = () => {
   // const { deviceId, token } = useContext(SpotifyContext);
@@ -12,12 +13,19 @@ const Home = () => {
     <div className={styles.home_container}>
       <CoverBlur />
       <div className={styles.rounded_container}>
-        <h1 className={styles.top_title}>Le Top 10</h1>
+        <h2 className={styles.top_title}>Le Top 10</h2>
         <TopHome />
         <div className={styles.PlaylistDiscovery_container}>
-          <img className={styles.PlaylistDiscovery_img} src={DiscoveryPlaylist} alt={""}/>
-            <p className={styles.Dicovery_title}>Le Top 10</p>
-            <div className={styles.SouligneDiscovery}></div>
+            <div className={styles.Text_Discovery_Content}>
+              <p className={styles.Dicovery_title}>Playlist découverte</p>
+              <div className={styles.SouligneDiscovery}></div>
+            </div>
+        </div>
+        <h2 className={styles.Artist_title}>Artistes à la une</h2>
+        <div className={styles.Artists_container}>
+          <ArtistBubble src={nekfeu} name='Nekfeu' />
+          <ArtistBubble src={nekfeu} name='Nekfeu' />
+          <ArtistBubble src={nekfeu} name='Nekfeu' />
         </div>
       </div>
     </div>

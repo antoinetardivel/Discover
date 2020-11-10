@@ -7,6 +7,7 @@
         margin-top:-57px;
         padding: 0 30px;
         padding-top: 30px;
+        padding-bottom: 300px;
     }
     .top_title{
         color: white;
@@ -14,11 +15,15 @@
         margin-bottom: 30px;
     }
     .PlaylistDiscovery_container{
-        height: 36.53vw;
+        height: 137px;
         width: 100%;
         margin-top: 30px;
         overflow: hidden;
         border-radius: 20px;
+        background-image: url('./img/DiscoveryPlaylist.png');
+        background-position: center;
+        background-size: cover;
+        display: flex;
     }
     .PlaylistDiscovery_img{
         width: 100%;
@@ -30,6 +35,78 @@
         font-size: 16px;
     }
     .SouligneDiscovery{
-        
+        height: 1px;
+        background-color: white;
+        width: 100%;
+        margin-top: 2px;
+    }
+    .Text_Discovery_Content{
+        margin-bottom: 12px;
+        margin-top: auto;
+        margin-left: 25px;
+    }
+    .Artists_container{
+        display: flex;
+        width: calc(100% + 60px);
+        overflow-y: overlay;
+        transform: translateX(-30px);
+    }
+    .Artists_container div:first-child{
+        margin-left: 30px;
+    }
+    .Artists_container div:last-child{
+        padding-right: 30px;
+    }
+    .Artist_title{
+        color: white;
+        font-size: 20px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+
+
+
+    .Artists_container{
+        scrollbar-color: #C8C4C5 transparent;
+        --scrollbarBG: transparent;
+        --thumbBG: #003466;
+        --thumbBG: var(--CouleurPrincipale);
+        --thumbBG: #C8C4C5;
+    }
+    .Artists_container::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+        border-radius: 2px;
+        display: none;
+    }
+    .Artists_container {
+        scrollbar-width: auto ;
+        scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+    }
+    .Artists_container::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+        border-radius: 2px;
+        display: none;
+    }
+    .Artists_container {
+        scrollbar-width: auto ;
+        scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+    }
+    .Artists_container::-webkit-scrollbar-track {
+        background: var(--scrollbarBG);
+        background-color: transparent;
+        border-radius: 2px;
+        display: none;
+    }
+    .Artists_container::-webkit-scrollbar-thumb {
+        background-color: var(--thumbBG) ;
+        border-radius: 2px;
+        display: none;
     }
 }

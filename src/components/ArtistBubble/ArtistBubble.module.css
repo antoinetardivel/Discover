@@ -1,0 +1,22 @@
+@media screen and (max-width: 480px) {
+    .block_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin: 0 10px;
+    }
+    .ArtistPhoto{
+        width: 125px;
+        height: 125px;
+        background-color: white;
+        border-radius: 50%;
+    }
+    .ArtistName{
+        color: white;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
