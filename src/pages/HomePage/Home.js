@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import CoverBlur from 'components/CoverBlur'
 import TopHome from 'components/TopHome'
 import ArtistBubble from 'components/ArtistBubble'
+import Podcast from 'components/Podcast'
 import styles from './Home.module.css'
 import nekfeu from './img/nekfeu.png'
 
@@ -27,6 +28,12 @@ const Home = () => {
           <ArtistBubble src={nekfeu} name='Nekfeu' />
           <ArtistBubble src={nekfeu} name='Nekfeu' />
         </div>
+        <h2 className={styles.Artist_title}>Podcast</h2>
+        <Podcast src={nekfeu} artist='Nekfeu' time='57min' name="Interview avec le nouv..."/>
+        <Podcast src={nekfeu} artist='Nekfeu' time='57min' name="Interview avec le nouv..."/>
+        <Podcast src={nekfeu} artist='Nekfeu' time='57min' name="Interview avec le nouv..."/>
+        <Podcast src={nekfeu} artist='Nekfeu' time='57min' name="Interview avec le nouv..."/>
+        <Podcast src={nekfeu} artist='Nekfeu' time='57min' name="Interview avec le nouv..."/>
       </div>
     </div>
   )

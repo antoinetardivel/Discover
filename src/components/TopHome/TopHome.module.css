@@ -1,7 +1,4 @@
 @media screen and (max-width: 480px) {
-    .block_container{
-        
-    }
     .cover_container{
         display: flex;
         height: calc(33.33vw + 20px);

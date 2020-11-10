@@ -7,7 +7,7 @@
         margin-top:-57px;
         padding: 0 30px;
         padding-top: 30px;
-        padding-bottom: 300px;
+        padding-bottom: 162.4px;
     }
     .top_title{
         color: white;
@@ -64,12 +64,7 @@
         margin-bottom: 30px;
     }
 
-
-
-
-
-
-
+    /*scroll-bar*/
 
     .Artists_container{
         scrollbar-color: #C8C4C5 transparent;
