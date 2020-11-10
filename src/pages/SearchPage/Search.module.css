@@ -1,0 +1,26 @@
+.titre {
+    position: relative;
+    color : white;
+    font-family: 'POPPINS';
+    margin-left: 75px;
+    padding-top: 15px;
+    font-size: 15px;
+}
+
+.SearchHierarchy {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 69px 1fr;
+    gap: 0px 0px;
+    background: linear-gradient(180deg, rgba(64,64,64,1) 0%, rgba(4,4,4,1) 100%);
+    height: 100vh;
+  }
+
+  .bar { 
+      grid-area: 1 / 1 / 2 / 2;
+      border-bottom: 1.5px solid #5C5C5C;
+    }
+
+  .content { 
+    grid-area: 2 / 1 / 3 / 2;
+    }
