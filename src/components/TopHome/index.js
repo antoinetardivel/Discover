@@ -1,32 +1,23 @@
 import React from 'react'
 // import ReactDOM from 'react-dom'
-import CoverBlur from 'components/CoverBlur'
 import styles from './TopHome.module.css'
 import nekfeu from './img/nekfeu.png'
+import PlayButton from './img/PlayButton.svg'
+import TopHomeShadow from './img/TopHomeShadow.svg'
 
 
 const TopHome = () => {
   return (
     <div className={styles.block_container}>
-      <CoverBlur />
-      <div className={styles.rounded_container}>
-        <h1>Le Top 10</h1>
-        <div className={styles.cover}>
-          <img id="cover1" className={styles.cover_image} src={nekfeu} alt={""}/>
-        </div>
-        <div className={styles.cover}>
-          <img id="cover2" className={styles.cover_image} src={nekfeu} alt={""}/>
-        </div>
-        <div className={styles.cover}>
-          <img id="cover3" className={styles.cover_image} src={nekfeu} alt={""}/>
-        </div>
-        <div className={styles.cover}>
-          <img id="cover4" className={styles.cover_image} src={nekfeu} alt={""}/>
-        </div>
-        <div className={styles.cover}>
-          <img id="cover5" className={styles.cover_image} src={nekfeu} alt={""}/>
-        </div>
+      <img className={styles.shadow} src={TopHomeShadow} alt={""}/>
+      <img className={styles.cover1} src={nekfeu} alt={""}/>
+      <img className={styles.cover2} src={nekfeu} alt={""}/>
+      <div className={styles.cover3}>
+        <img className={styles.cover31} src={nekfeu} alt={""}/>
+        <img className={styles.PlayButton} src={PlayButton} alt={""}/>
       </div>
+      <img className={styles.cover4} src={nekfeu} alt={""}/>
+      <img className={styles.cover5} src={nekfeu} alt={""}/>
     </div>
   )
   
