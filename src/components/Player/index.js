@@ -16,9 +16,7 @@ class Player extends React.Component {
                     <p><span>01 : 52</span> | 03 : 35</p>
                     <PlayerProgressionBar/>
                 </div>
-            </div>
-
-                
+            </div>      
         )
     }
   
