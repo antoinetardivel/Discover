@@ -1,4 +1,5 @@
 import React, { Children } from 'react'
+import { Link } from 'react-router-dom'
 import Styles from './PopUpTop10.module.css'
 import BoutonAbonnement from 'components/BoutonAbonnement/BoutonAbonnement'
 
@@ -20,6 +21,7 @@ const PopUpTop10 = (prop) => {
                   </div>
               </div>
                 <p className={Styles.presArtist} >{prop.presArtist}</p>
+                <button className={Styles.btnDisco}><Link className={Styles.linkBtnDico}  to={{pathname: '/Artiste', aboutProps:{ artistName: prop.artistName, imageArtist: prop.imageArtist } }}> Voir la discographie </Link></button>
                 <div className={Styles.croixRetour}>
                     {prop.children}
                 </div>

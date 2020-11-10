@@ -1,15 +1,18 @@
 @media screen and (max-width: 480px) {
     .block_container{
+        
+    }
+    .cover_container{
         display: flex;
         height: calc(33.33vw + 20px);
-
     }
     .shadow{
-        width: calc(100% - 60px);
-        position: absolute;
-        left: 30px;
-        top: 23.33vw;
         filter: blur(8px);
+        position: absolute;
+        width: calc(100% - 60px);
+        margin-top: -16vw;
+        right: 30px;
+        left: 30px;
     }
     .cover1{
         width: 23.2vw;
@@ -52,6 +55,7 @@
         margin-top: 50%;
         margin-left: 50%;
         transform: translate(-50%, -50%);
+        width: 60px;
     }
     .cover4{
         width: 28.265vw;
@@ -68,7 +72,7 @@
         width: 23.2vw;
         height: 23.2vw;
         margin-top: 5.065vw;
-        margin-left: calc(100% - 90px - 23.2vw);
+        margin-left: auto;
         border-radius: 17%;
         filter: brightness(0.38);
     }

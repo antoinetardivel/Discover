@@ -55,10 +55,24 @@
 }
 
 .presArtist{
-    font-size: 15px;
-    margin: 10vw;
+    font-size: 13px;
+    margin: 3vh 10vw 0vh 10vw;
 }
 
 .croixRetour{
     margin: -2vh 0 0 35vw;
+}
+
+.btnDisco{
+    color: #141414;
+    margin: 3vh 0 5vh 21vw;
+    border-radius: 10px;
+    outline-style:none;
+    background-color: #C5C5C5;
+    border: none;
+    padding: 0.5vh 4vw 0.5vh 4vw;
+}
+
+.linkBtnDico{
+    color: #141414 ;
 }
