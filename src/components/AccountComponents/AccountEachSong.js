@@ -28,9 +28,11 @@ const AccountEachSong = () => {
 
     return (
         <div className={styles.account_song_container}>
-            <Eachsong img={profilImg} title="Sara" artist="artist" ecoute="180000" />
-            <Eachsong img={profilImg} title="Cahal" artist="artist" ecoute="180" />
-            <Eachsong img={profilImg} title="Edite" artist="artist" ecoute="180" />
+            <Eachsong img={profilImg} title="Lonely hunter" artist="Foals" ecoute="100" />
+            <Eachsong img={profilImg} title="Devil that I know" artist="Jacob Banks" ecoute="180" />
+            <Eachsong img={profilImg} title="Quiet little voices" artist="WWPJ" ecoute="180" />
+            <Eachsong img={profilImg} title="Domino" artist="Johnny Vegas" ecoute="180" />
+            <Eachsong img={profilImg} title="Je crois qu'elle m'aime" artist="Johnny Vegas" ecoute="180" />
         </div>
 
         
