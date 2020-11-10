@@ -24,7 +24,7 @@ class PlayTop10 extends Component{
     
         return (
             <div>
-                <img id="playTop10" className={Styles.play} onClick={()=> changePause()} src={play} />
+                <img id="playTop10" alt="" className={Styles.play} onClick={()=> changePause()} src={play} />
             </div>
     
         )

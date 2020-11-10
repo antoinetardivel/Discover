@@ -10,11 +10,11 @@ const PopUpTop10 = (prop) => {
       <div className={Styles.popUpConener} >
           <div className={Styles.popUpBox}>
                 <div className={Styles.imageContener} id={prop.id}>
-                    <img src={prop.src} className={Styles.image} />
+                    <img alt="" src={prop.src} className={Styles.image} />
                 </div>
               <p className={Styles.titreMusic}>{prop.musicName}</p>
               <div className={Styles.BandeauArtist}>
-                  <img className={Styles.imgArtist} src={prop.imageArtist} />
+                  <img alt="" className={Styles.imgArtist} src={prop.imageArtist} />
                   <div>
                      <h3 className={Styles.nomArtist}>{prop.artistName}</h3>
                      <BoutonAbonnement />

@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react'
+import React, {useState} from 'react'
 import Styles from './MusicIcon.module.css'
 import PopUpTop10 from 'components/PopUpTop10/PopUpTop10'
 
@@ -23,7 +23,7 @@ const MusicIcon = (prop) => {
       <div >
           <div onClick={popUpTop10}>
             <div className={Styles.imageContener} id={prop.id}>
-                <img src={prop.src} className={Styles.image} />
+                <img src={prop.src} alt="" className={Styles.image} />
             </div>
             <h3 className={Styles.musicName}>{prop.musicName}</h3>
             <h4 className={Styles.artistName}>{prop.artistName}</h4>

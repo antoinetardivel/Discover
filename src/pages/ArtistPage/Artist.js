@@ -7,7 +7,7 @@ function Artist(props) {
             {console.log(props.location.aboutProps)}
             <h3>Nom de l'artist : {props.location.aboutProps.artistName}</h3>
             <p>Image de l'artist</p>
-            <img src={props.location.aboutProps.imageArtist} />
+            <img alt="" src={props.location.aboutProps.imageArtist} />
         </div>
     );
   }

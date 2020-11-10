@@ -12,7 +12,7 @@ class BlurBanner extends Component{
     render(){
         return (
             <div className={styles.blur_img_container}>
-                <img src={profilImg}/>
+                <img src={profilImg} alt=""/>
             </div>
     
             

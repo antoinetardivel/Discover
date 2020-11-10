@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 
 import styles from './Player.module.css'
 import PlayerProgressionBar from './PlayerProgressionBar'

@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import styles from './PlaylistList.module.css'
 import album1 from './img/album1.png'
 import album2 from './img/album2.png'
@@ -15,7 +15,7 @@ import album5 from './img/album5.png'
         function EachPlaylist(props) {
             return(
                 <div className={styles.each_playlist}>
-                   <img src={props.imgName}/>
+                   <img alt="" src={props.imgName}/>
                    <p>{props.playlistName}</p>
                 </div>
             )
