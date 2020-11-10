@@ -28,7 +28,7 @@ const Home = () => {
           <ArtistBubble src={nekfeu} name='Nekfeu' />
           <ArtistBubble src={nekfeu} name='Nekfeu' />
         </div>
-        <h2 className={styles.Artist_title}>Podcast</h2>
+        <h2 className={styles.Artist_title}>Podcasts</h2>
         <Podcast src={nekfeu} artist='Nekfeu' time='57min' name="Interview avec le nouv..."/>
         <Podcast src={nekfeu} artist='Nekfeu' time='57min' name="Interview avec le nouv..."/>
         <Podcast src={nekfeu} artist='Nekfeu' time='57min' name="Interview avec le nouv..."/>
