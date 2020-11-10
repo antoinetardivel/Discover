@@ -24,11 +24,11 @@ import album5 from './img/album5.png'
     
         return (
             <div className={styles.playlist_container}>
-                <EachPlaylist imgName={album1} playlistName="aaaa" />
-                <EachPlaylist imgName={album2} playlistName="aaaa" />
-                <EachPlaylist imgName={album3} playlistName="aaaa" />
-                <EachPlaylist imgName={album4} playlistName="aaaa" />
-                <EachPlaylist imgName={album5} playlistName="aaaa" />
+                <EachPlaylist imgName={album1} playlistName="Electro" />
+                <EachPlaylist imgName={album2} playlistName="Chill" />
+                <EachPlaylist imgName={album3} playlistName="Rap" />
+                <EachPlaylist imgName={album4} playlistName="Foals remix" />
+                <EachPlaylist imgName={album5} playlistName="top 10" />
             </div>
     
             
