@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import styles from './Account.module.css'
+import PlaylistList from '../PlaylistList'
 
 
 
@@ -14,6 +15,7 @@ class AccountPlaylist extends Component{
                     <h2>Playlist</h2>
                     <h2>Favoris</h2>
                 </div>
+                <PlaylistList/>
             </div>
     
             

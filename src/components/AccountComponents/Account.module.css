@@ -40,6 +40,7 @@
 .account_content_container{
     margin-top: 1.8rem;
     padding: 3rem;
+    padding-bottom: 25vh;
     background : linear-gradient(to top, #040404,#404040);
     border-top-right-radius: 50px;
     min-height: 100vh;
@@ -120,8 +121,21 @@
     color: var(--white);
     font-family: 'Poppins';
     font-weight: 400;
+    position: relative;
+}
+
+.playlist_favoris_container h2:first-child::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    background-color: var(--blue);
+  
 }
 
 .playlist_favoris_container h2:nth-child(2){
     margin-left: 5rem;
+    color: var(--grey);
 }
