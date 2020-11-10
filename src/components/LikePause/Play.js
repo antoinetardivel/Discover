@@ -37,7 +37,6 @@ import pause from './img/pause.svg'
     const [src,updateSrc] = useState(pause);
 
 
-
     const changePause = () => {
         if(src === pause){
             updateSrc(play);
