@@ -13,7 +13,6 @@ class MenuProgressBar extends Component{
         const count = setInterval(()=>{
             i++;
             progressBar.style.width = i/musicLength * 100 + "%";
-            console.log(progressBar.style.width);
             if(i/musicLength * 100 >= 100){
                 clearInterval(count);
                 i = 0;

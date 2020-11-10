@@ -77,10 +77,13 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    position: fixed;
+    bottom: 10vh;
+    background-color: #181818;
 }
 
 .audio_player_img{
-    height: 100%;
+    object-fit: cover;
     width: 18%;
 }
 
