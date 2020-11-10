@@ -5,6 +5,7 @@ import {BrowserRouter as Router , Switch, Route} from 'react-router-dom';
 
 import Home from 'pages/HomePage';
 import Nav from './components/Menu/index'
+import MenuAudioPlayer from './components/Menu/MenuAudioPlayer'
 import Account from './pages/UserPage/Account'
 import Top10 from './pages/Top10Page/Top10'
 import Search from './pages/SearchPage/Search'
@@ -24,6 +25,7 @@ function App() {
                 <Route path='/Artiste' component={Artist} />
                 <Route path='/Playlist' component={Playlist} />
               </Switch>
+            <MenuAudioPlayer/>
             <Nav />
           </Router>
       </div>

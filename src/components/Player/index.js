@@ -1,20 +1,21 @@
-import React from 'react'
+import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 
 import styles from './Player.module.css'
 
 
-const Player = () => {
+class Player extends React.Component {
    
   
-  
-  return (
-    <div className={styles.menu_container}>
-        aaaa
-    </div>
+    render(){
+        return (
+            <div className={styles.menu_container}>
+                aaaa
+            </div>
 
-        
-  )
+                
+        )
+    }
   
 }
 
