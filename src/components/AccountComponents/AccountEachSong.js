@@ -12,13 +12,13 @@ const AccountEachSong = () => {
             <div className={styles.account_each_song_container}>
                 <div className={styles.account_song_artiste_container}>
                     <img className={styles.account_music_img} src={props.img}/>
-                    <div>
+                    <div className={styles.account_title_artist_container}>
                         <p>{props.title}</p>
                         <p>{props.artist}</p>
                     </div>
                 </div>
                 <div  className={styles.account_ecoute_like_container}>
-                    <p>{props.ecoute}</p>
+                    <p>{props.ecoute} écoutes</p>
                     <Like />
                 </div>
             </div>
@@ -28,7 +28,7 @@ const AccountEachSong = () => {
 
     return (
         <div className={styles.account_song_container}>
-            <Eachsong img={profilImg} title="Sara" artist="artist" ecoute="180" />
+            <Eachsong img={profilImg} title="Sara" artist="artist" ecoute="180000" />
             <Eachsong img={profilImg} title="Cahal" artist="artist" ecoute="180" />
             <Eachsong img={profilImg} title="Edite" artist="artist" ecoute="180" />
         </div>

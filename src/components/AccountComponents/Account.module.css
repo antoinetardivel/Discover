@@ -55,14 +55,17 @@
 
 .account_each_song_container{
     border-bottom: 2px solid #666666;
-    height: 10vh;
+    height: 8vh;
     display: flex;
     align-items: center;
+    color: var(--white);
+    justify-content: space-between;
 }
 
 .account_song_artiste_container{
     display: flex;
     height: 100%;
+    width: 70%;
     align-items: center;
 }
 
@@ -73,8 +76,25 @@
 
 .account_ecoute_like_container{
     display: flex;
+    min-width: 40%;
+    justify-content: space-between;
 }
 
-#aaa{
-    font-size: 25rem;
+.account_title_artist_container{
+    font-family: 'Poppins';
+    margin-left: 10%;
+}
+
+.account_title_artist_container p:first-child{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.account_title_artist_container p:nth-child(2), .account_ecoute_like_container p{
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.account_ecoute_like_container p{
+    margin-right: 8%;
 }
