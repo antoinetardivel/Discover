@@ -17,3 +17,28 @@
     font-size: 14px;
     font-weight: lighter;
 }
+
+.PopUpUnactive{
+    display: none !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(3px);
+    backdrop-filter: brightness(-7);
+    z-index: 10;
+}
+
+.PopUpActive{
+    display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(3px);
+    backdrop-filter: brightness(-7);
+    z-index: 10;
+    
+}

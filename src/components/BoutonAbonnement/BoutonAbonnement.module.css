@@ -12,4 +12,6 @@
     color: black;
     border: none;
     padding: 4px 20px 4px 20px;
+    border-radius: 10px;
+    outline-style:none;
 }
