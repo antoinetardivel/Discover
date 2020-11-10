@@ -1,7 +1,4 @@
 import React, {Component} from 'react'
-import styles from './Like.module.css'
-
-
 import play from './img/play.svg'
 import pause from './img/pause.svg'
 
@@ -26,7 +23,7 @@ class Play extends Component{
     
         return (
             <div>
-                <img id="pause" onClick={()=> changePause()} src={pause} />
+                <img id="pause" alt="" onClick={()=> changePause()} src={pause} />
             </div>
     
         )

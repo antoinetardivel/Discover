@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import styles from './Like.module.css'
 
 
 import heart from './img/heart.svg'
@@ -26,7 +25,7 @@ class Like extends Component{
     
         return (
             <div>
-                <img id="like" onClick={()=> changeLike()} src={heart} />
+                <img id="like" alt="" onClick={()=> changeLike()} src={heart} />
             </div>
     
         )
