@@ -12,8 +12,8 @@ class AccountBanner extends Component{
         return (
             <div className={styles.account_banner}>
                 <div className={styles.profil_img_container}>  
-                    <img src={profilImg}/>
-                    <img src={editProfil}/>
+                    <img src={profilImg} alt=""/>
+                    <img src={editProfil} alt=""/>
                 </div>
                 <div className={styles.banner_info_container}>
                     <div>

@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import profilImg from './img/profil.jpg'
 import styles from './Account.module.css'
 import Like from '../LikePause/Like'
@@ -11,7 +11,7 @@ const AccountEachSong = () => {
         return(
             <div className={styles.account_each_song_container}>
                 <div className={styles.account_song_artiste_container}>
-                    <img className={styles.account_music_img} src={props.img}/>
+                    <img className={styles.account_music_img} src={props.img} alt=""/>
                     <div className={styles.account_title_artist_container}>
                         <p>{props.title}</p>
                         <p>{props.artist}</p>

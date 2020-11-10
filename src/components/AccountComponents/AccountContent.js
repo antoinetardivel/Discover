@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import profilImg from './img/profil.jpg'
 import styles from './Account.module.css'
 import AccountEachSong from './AccountEachSong'
 import BtnGradient from '../BtnGradient/index'

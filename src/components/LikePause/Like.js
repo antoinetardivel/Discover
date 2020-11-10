@@ -15,7 +15,7 @@ class Like extends Component{
 
         const changeLike = () => {
             const pauseImg = document.getElementById('like');
-        
+            console.log(pauseImg);
             if(pauseImg.src.includes(whiteHeart)){
                 pauseImg.setAttribute('src', heart);
             }
