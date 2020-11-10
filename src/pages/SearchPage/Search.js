@@ -3,6 +3,7 @@ import style from './Search.module.css'
 import Loupe from 'components/Menu/img/research.svg'
 import MusicIcon from 'components/MusicIcon/MusicIcon'
 import ImageMusicMoody from 'components/MusicIcon/img/moody.png'
+import option from './option.svg'
 
 function Search() {
     return(
@@ -13,13 +14,35 @@ function Search() {
                         <input className={style.searchHeader_input} type="text" id="rechercher" name="rechercher" placeholder="Rechercher"/>
                     </div>
 
-                    <div className={style.content}>
-                        <div className={style.content_result}>
-                            <div className={style.content_result_ligne}>
+                    <div className={style.content_result}>
+                        <img className={style.result_img} src={ImageMusicMoody}/>
+                            <div className={style.text}>
+                            <h2 className={style.result_title}>Titre musique * Artiste</h2>
+                            <h3 className={style.result_category}>Titre</h3>
                             </div>
-                        </div>
-                        
+                        <img className={style.result_options} src={option}/>
                     </div>
+
+                    <div className={style.content_result}>
+                        <img className={style.result_img} src={ImageMusicMoody}/>
+                            <div className={style.text}>
+                            <h2 className={style.result_title}>Titre musique * Artiste</h2>
+                            <h3 className={style.result_category}>Titre</h3>
+                            </div>
+                        <img className={style.result_options} src={option}/>
+                    </div>
+
+                    <div className={style.content_result}>
+                        <img className={style.result_img} src={ImageMusicMoody}/>
+                            <div className={style.text}>
+                            <h2 className={style.result_title}>Titre musique * Artiste</h2>
+                            <h3 className={style.result_category}>Titre</h3>
+                            </div>
+                        <img className={style.result_options} src={option}/>
+                    </div>
+
+
+
            </div>
             
         );
