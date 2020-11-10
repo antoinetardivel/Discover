@@ -13,4 +13,23 @@
         font-size: 20px;
         margin-bottom: 30px;
     }
+    .PlaylistDiscovery_container{
+        height: 36.53vw;
+        width: 100%;
+        margin-top: 30px;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .PlaylistDiscovery_img{
+        width: 100%;
+        position: inherit;
+        transform: translateY(-20%);
+    }
+    .Dicovery_title{
+        color: white;
+        font-size: 16px;
+    }
+    .SouligneDiscovery{
+        
+    }
 }
