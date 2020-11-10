@@ -1,7 +1,15 @@
 @media screen and (max-width: 480px) {
     .block_container{
         display: flex;
-        height: 33.33vw;
+        height: calc(33.33vw + 20px);
+
+    }
+    .shadow{
+        width: calc(100% - 60px);
+        position: absolute;
+        left: 30px;
+        top: 23.33vw;
+        filter: blur(8px);
     }
     .cover1{
         width: 23.2vw;
