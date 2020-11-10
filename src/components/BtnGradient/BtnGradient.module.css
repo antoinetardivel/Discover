@@ -1,3 +1,13 @@
 .btn_gradient{
     background-image: var(--colored_gradient);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    margin: auto;
+    display: block;
+}
+
+.btn_gradient:focus{
+    outline: none;
+    box-shadow: ;
 }

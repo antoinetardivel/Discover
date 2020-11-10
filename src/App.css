@@ -6,6 +6,8 @@
     --primary-color: #007bff;
     --secondary-color: #F68D28;
     --white: #F5F5F5;
+    --green: #28F299;
+    --blue: #0BB5E1;
     --colored_gradient: linear-gradient(45deg,#28F299, #0BB5E1);
   }
 
