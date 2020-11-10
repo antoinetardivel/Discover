@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
+import BlurBanner from '../BlurBanner'
 import AccountBanner from './AccountBanner'
 import AccountContent from './AccountContent'
-import BlurBanner from '../BlurBanner'
 
 
 
@@ -13,7 +13,7 @@ class AccountComponent extends Component{
     render(){
         return (
             <div>
-                <BlurBanner/>
+                <BlurBanner imgName="aaa"/>
                 <AccountBanner/>
                 <AccountContent/>
             </div>

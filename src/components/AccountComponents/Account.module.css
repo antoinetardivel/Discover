@@ -42,7 +42,7 @@
     padding: 3rem;
     background : linear-gradient(to top, #040404,#404040);
     border-top-right-radius: 50px;
-    min-height: 200vh;
+    min-height: 100vh;
 }
 
 .morceaux_plus_ecoutes{
@@ -105,4 +105,23 @@
 
 .account_ecoute_like_container p{
     margin-right: 8%;
+}
+
+
+.account_playlist_container{
+    margin-top: 3.9rem;
+}
+
+.playlist_favoris_container{
+    display: flex;
+}
+
+.playlist_favoris_container h2{
+    color: var(--white);
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.playlist_favoris_container h2:nth-child(2){
+    margin-left: 5rem;
 }

@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import styles from './Account.module.css'
 import AccountEachSong from './AccountEachSong'
 import BtnGradient from '../BtnGradient/index'
+import AccountPlaylist from './AccountPlaylist'
 
 
 
@@ -15,6 +16,7 @@ class AccountContent extends Component{
                 <h1 className={styles.morceaux_plus_ecoutes}>Morceaux les plus écoutés</h1>
                 <AccountEachSong/>
                 <BtnGradient/>
+                <AccountPlaylist/>
             </div>
     
             
