@@ -13,6 +13,7 @@ class BlurBanner extends Component{
         return (
             <div className={styles.blur_img_container}>
                 <img src={profilImg} alt=""/>
+                <div className={styles.filter}></div>
             </div>
     
             
