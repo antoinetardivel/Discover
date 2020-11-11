@@ -1,0 +1,63 @@
+.artist_content_container{
+    margin-top: 15vh;
+    padding: 3rem;
+    padding-top: 0;
+    padding-bottom: 25vh;
+    background : linear-gradient(to top, #040404,#404040);
+    border-top-right-radius: 50px;
+    min-height: 100vh;
+    position: relative;
+}
+
+.resume{
+    position: relative;
+    border-top-right-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #404040;
+    width: 100vw;
+    margin-left: -3rem;
+}
+
+.resume::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 10px;
+    width: 100vw;
+    opacity: .15;
+    background-image: linear-gradient(0, #404040, #040404);
+}
+
+.abonnement_btn{
+    position: absolute;
+    right: 20vw;
+    top: -2vh;
+}
+
+.artist_title{
+    padding-left: 3rem;
+    color: var(--white);
+    font-size: 2.6rem;
+    padding-top: 2.1rem;
+}
+
+.info_container{
+    padding-left: 3rem;
+    margin-top: 1.8rem;
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+    font-family: 'Poppins';
+}
+
+.info_container div p:first-child{
+    font-weight: 400;
+}
+
+.info_container div p:last-child{
+    font-weight: 200;
+}
