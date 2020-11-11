@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './Player.module.css'
-import album from './img/album.png'
 import previous from './img/previous.svg'
 import next from './img/next.svg'
 import random from './img/random.svg'
