@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import album from './img/album.png'
 import styles from './Player.module.css'
 
