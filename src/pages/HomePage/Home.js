@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 // import { SpotifyContext } from 'components/SpotifyWrapper'
 import CoverBlur from 'components/CoverBlur'
 import TopHome from 'components/TopHome'

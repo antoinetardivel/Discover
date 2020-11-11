@@ -1,7 +1,6 @@
 import React from 'react'
 // import ReactDOM from 'react-dom'
 import styles from './Podcast.module.css'
-import nekfeu from './img/nekfeu.png'
 
 
 const Podcast = (prop) => {

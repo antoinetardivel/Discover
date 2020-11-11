@@ -35,10 +35,10 @@ const MusicIcon = (prop) => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37">
                     <g   id="Groupe_209" data-name="Groupe 209" transform="translate(-169 -560)">
                         <g id="Groupe_151" data-name="Groupe 151" transform="translate(-139.5 367.5)">
-                            <line id="Ligne_38" data-name="Ligne 38" x2="15.622" y2="15.622" transform="translate(319.5 202.5)" fill="none" stroke="#848484" stroke-linecap="round" stroke-width="1"/>
-                            <line id="Ligne_39" data-name="Ligne 39" x1="15.622" y2="15.622" transform="translate(319.5 202.5)" fill="none" stroke="#848484" stroke-linecap="round" stroke-width="1"/>
+                            <line id="Ligne_38" data-name="Ligne 38" x2="15.622" y2="15.622" transform="translate(319.5 202.5)" fill="none" stroke="#848484" strokeLinecap="round" strokeWidth="1"/>
+                            <line id="Ligne_39" data-name="Ligne 39" x1="15.622" y2="15.622" transform="translate(319.5 202.5)" fill="none" stroke="#848484" strokeLinecap="round" strokeWidth="1"/>
                         </g>
-                        <g id="Ellipse_79" data-name="Ellipse 79" transform="translate(169 560)" fill="none" stroke="#707070" stroke-width="1">
+                        <g id="Ellipse_79" data-name="Ellipse 79" transform="translate(169 560)" fill="none" stroke="#707070" strokeWidth="1">
                             <circle cx="18.5" cy="18.5" r="18.5" stroke="none"/>
                             <circle cx="18.5" cy="18.5" r="18" fill="none"/>
                         </g>

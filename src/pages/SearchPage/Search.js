@@ -1,7 +1,6 @@
 import React from 'react';
 import style from './Search.module.css'
 import Loupe from 'components/Menu/img/research.svg'
-import MusicIcon from 'components/MusicIcon/MusicIcon'
 import ImageMusicMoody from 'components/MusicIcon/img/moody.png'
 import option from './option.svg'
 
