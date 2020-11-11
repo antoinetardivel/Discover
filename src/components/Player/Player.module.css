@@ -12,6 +12,18 @@
     flex-direction: column;
 }
 
+.player_container::after{
+    content: '';
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #363636;
+    border-radius: 30px;
+    width: 20%;
+    height: 5px;
+}
+
 .player_container h1, .player_container h2{
     color: var(--white);
     font-family: 'Poppins';
@@ -61,7 +73,10 @@
     stroke-dasharray: 339.292;
     stroke-dashoffset: 0;
     transition: 1s linear;
+    position: relative;
 }
+
+
 
 
 .album{
