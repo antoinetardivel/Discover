@@ -14,7 +14,7 @@ class AccountComponent extends Component{
     render(){
         return (
             <div>
-                <Player/>
+                {/* <Player/> */}
                 <BlurBanner imgName="aaa"/>
                 <AccountBanner/>
                 <AccountContent/>

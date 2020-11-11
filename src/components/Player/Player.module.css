@@ -87,6 +87,7 @@
 }
 
 .button_container{
+    margin-top: 2.5rem;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
