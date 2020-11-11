@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import play from './img/play.svg'
 import pause from './img/pause.svg'
+import styles from './Like.module.css'
 
 
 
@@ -22,7 +23,7 @@ import pause from './img/pause.svg'
 
     return(
         <div>
-            <img onClick={changePause} src={src} alt=""/>
+            <img className={styles.like_size} onClick={changePause} src={src} alt=""/>
         </div>
     )
 }
