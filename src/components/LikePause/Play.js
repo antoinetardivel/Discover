@@ -22,7 +22,7 @@ import styles from './Like.module.css'
     }
 
     return(
-        <div>
+        <div className={styles.play_container}>
             <img className={styles.like_size} onClick={changePause} src={src} alt=""/>
         </div>
     )

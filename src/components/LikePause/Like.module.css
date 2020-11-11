@@ -1,3 +1,11 @@
+
+
+.play_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .like_size{
     width: 4vw;
 }

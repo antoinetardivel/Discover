@@ -2,9 +2,9 @@ import React from 'react'
 import styles from './Player.module.css'
 import previous from './img/previous.svg'
 import next from './img/next.svg'
-import random from './img/random.svg'
-import loop from './img/loop.svg'
 import Play from '../LikePause/Play'
+import Loop from '../LoopRandom/Loop'
+import Random from '../LoopRandom/Random'
 
 class PlayerBtnContainer extends React.Component {
    
@@ -15,11 +15,13 @@ class PlayerBtnContainer extends React.Component {
         return (
            
             <div className={styles.button_container}>
-                <img src={random} alt=""/>
+                <Random/>
                 <img src={previous} alt=""/>
-                <Play/>
+                <div className={styles.radius}>
+                    <Play/>
+                </div>
                 <img src={next} alt=""/>
-                <img src={loop} alt=""/>
+                <Loop/>
             </div>
 
         )
