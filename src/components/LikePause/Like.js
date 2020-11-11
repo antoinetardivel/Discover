@@ -25,7 +25,7 @@ const Like = ()=>{
     }
 
     return(
-        <div>
+        <div className={styles.play_container}>
             <img className={styles.like_size} onClick={changeLike} src={src} alt=""/>
         </div>
     )

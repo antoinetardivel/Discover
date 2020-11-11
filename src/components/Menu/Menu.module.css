@@ -127,10 +127,7 @@
     align-items: center;
 }
 
-.like_pause_container img{
-    height: 20px;
-    width: 20px;
-}
+
 
 .progress_bar_container{
     position: absolute;
