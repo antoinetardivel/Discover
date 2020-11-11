@@ -32,6 +32,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 2.4rem;
+    align-items: center;
 }
 
 .player_progress_bar_container p{
@@ -43,9 +44,26 @@
 }
 
 
-#svg circle {
+.demo {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress {
+    transform: rotate(-90deg);
+}
+.progress__value {
+    stroke-dasharray: 339.292;
+    stroke-dashoffset: 339.292;
+    animation: progress 2s infinite alternate;
+}
+
+@keyframes progress {
+from {
     stroke-dashoffset: 0;
-    transition: stroke-dashoffset 1s linear;
-    stroke: #fff;
-    stroke-width: 1rem;
+}
+to {
+    stroke-dashoffset: 339.292;
+}
 }
