@@ -13,7 +13,7 @@ class Player extends React.Component {
                 <h1>Like lightning</h1>
                 <h2>Fools</h2>
                 <div className={styles.player_progress_bar_container}>
-                    <p><span>01 : 52</span> | 03 : 35</p>
+                   
                     <PlayerProgressionBar/>
                 </div>
             </div>      

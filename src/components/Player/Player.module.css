@@ -43,8 +43,13 @@
     color: var(--green);
 }
 
+.counter_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
-.demo {
+.svg_container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,6 +60,7 @@
 .progress__value {
     stroke-dasharray: 339.292;
     stroke-dashoffset: 0;
+    transition: 1s linear;
     /* animation: progress 2s infinite alternate; */
 }
 
