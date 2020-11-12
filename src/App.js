@@ -25,7 +25,7 @@ function App() {
                 <Route path='/Artiste' component={Artist} />
                 <Route path='/Playlist' component={Playlist} />
               </Switch>
-            <MenuAudioPlayer/>
+            {/* <MenuAudioPlayer/> */}
             <Nav />
           </Router>
       </div>

@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Player from '../Player'
+import MenuAudioPlayer from '../Menu/MenuAudioPlayer'
 
 
 
@@ -11,7 +12,8 @@ class PlayerAppearOnclick extends Component{
         super();
         this.state = {
           name: "React",
-          playerComponent: false
+          playerComponent: false,
+          menuPlayerComponent: true
 
         };
         this.hideComponent = this.hideComponent.bind(this);
@@ -19,22 +21,24 @@ class PlayerAppearOnclick extends Component{
 
       hideComponent(name) {
         switch (name) {
-          case "playerComponent":
-            this.setState({ playerComponent: !this.state.playerComponent });
-            break;
+            case "playerComponent":
+                this.setState({ playerComponent: !this.state.playerComponent });
+                this.setState({ menuPlayerComponent: !this.state.menuPlayerComponent });
+                break;
           
         }
       }
 
 
     render(){
-        const { playerComponent} = this.state;
+        const { playerComponent, menuPlayerComponent} = this.state;
         
 
         return (
             <div className="test">
-                <p onClick={() => this.hideComponent("playerComponent")} >aaaaa</p>
+                <p onClick={() => this.hideComponent("playerComponent") } >aaaaa</p>
                  {playerComponent && <Player />} 
+                 {menuPlayerComponent && <MenuAudioPlayer />} 
             </div>
     
             

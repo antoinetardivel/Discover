@@ -79,6 +79,7 @@
     justify-content: space-between;
     width: 100%;
     position: fixed;
+    left: 0;
     bottom: 10vh;
     background-color: #181818;
     z-index: 39;
