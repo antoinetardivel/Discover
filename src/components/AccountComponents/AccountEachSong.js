@@ -8,6 +8,7 @@ import Player from '../Player'
 
 
 const AccountEachSong = () => {
+    console.log(<PlayerAppearOnclick/>)
     
     function Eachsong(props) {
         return(
@@ -31,7 +32,9 @@ const AccountEachSong = () => {
     return (
         <div className={styles.account_song_container}>
             <PlayerAppearOnclick/>
-            <Eachsong img={profilImg} title="Lonely hunter" artist="Foals" ecoute="100" />
+
+            
+            <Eachsong onClick={() => this.hideComponent("playerComponent")} img={profilImg} title="Lonely hunter" artist="Foals" ecoute="100" />
             <Eachsong img={profilImg} title="Devil that I know" artist="Jacob Banks" ecoute="180" />
             <Eachsong img={profilImg} title="Quiet little voices" artist="WWPJ" ecoute="180" />
             <Eachsong img={profilImg} title="Domino" artist="Johnny Vegas" ecoute="180" />

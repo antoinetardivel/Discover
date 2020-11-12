@@ -18,7 +18,6 @@ class PlayerAppearOnclick extends Component{
       }
 
       hideComponent(name) {
-        console.log(name);
         switch (name) {
           case "playerComponent":
             this.setState({ playerComponent: !this.state.playerComponent });
@@ -30,6 +29,8 @@ class PlayerAppearOnclick extends Component{
 
     render(){
         const { playerComponent} = this.state;
+        
+
         return (
             <div className="test">
                 <p onClick={() => this.hideComponent("playerComponent")} >aaaaa</p>
