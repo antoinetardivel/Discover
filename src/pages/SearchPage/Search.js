@@ -24,14 +24,14 @@ function Search() {
 
                         <ResultContent
                         img={ImageMusicMoody}
-                        title="Titre musique"
+                        title="Black Shapes"
                         category="Titre"
                         />
 
                         <ResultContent
                         img={ImageMusicMoody}
-                        title="Titre musique"
-                        category="Titre"
+                        title="Moody"
+                        category="Artiste"
                         />
                         
 

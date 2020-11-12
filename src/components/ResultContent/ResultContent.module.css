@@ -6,13 +6,21 @@
 }
 
 
-
-.result_img {
+.result_img_single {
     height: 60px;
     width: 60px;
     object-fit: fill;
     border-radius: 17%;
 }
+
+.result_img_artist {
+    height: 60px;
+    width: 60px;
+    object-fit: fill;
+    border-radius: 50%;
+
+}
+
 
 .result_options {
     margin-left: auto;
