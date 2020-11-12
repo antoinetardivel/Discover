@@ -12,18 +12,7 @@ import pochette from './img/test_pochette.svg'
 
 class MenuAudioPlayer extends Component{
 
-    constructor(){
-        super();
-        this.state={
-            showMe:true
-        }
-    }
-
-    operation(){
-        this.setState({
-            showMe: !this.state.showMe
-        })
-    }
+    
     render(){
         
     

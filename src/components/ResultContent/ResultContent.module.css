@@ -1,0 +1,42 @@
+.content_result {
+    display : flex;
+    margin: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #5c5c5c;
+}
+
+
+.result_img_single {
+    height: 60px;
+    width: 60px;
+    object-fit: fill;
+    border-radius: 17%;
+}
+
+.result_img_artist {
+    height: 60px;
+    width: 60px;
+    object-fit: fill;
+    border-radius: 50%;
+
+}
+
+
+.result_options {
+    margin-left: auto;
+}
+
+.text {
+    font-family: 'POPPINS';
+    color: #f5f5f5;
+    margin-left: 20px;
+    font-weight: 300;
+}
+
+.result_category {
+    font-weight: 200;
+}
+
+.result-title {
+    font-weight: 300;
+}

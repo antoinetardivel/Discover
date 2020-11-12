@@ -85,6 +85,7 @@
 .account_ecoute_like_container{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     width: 40%;
 }
 

@@ -3,7 +3,8 @@
     position: fixed;
     width: 100%;
     padding-bottom: 2vh;
-    bottom: 20vh;
+    bottom: 9vh;
+    left: 0;
     background-image: linear-gradient(180deg,#363636,#040404 );
     border-top-left-radius: 57px;
     border-top-right-radius: 57px;
@@ -88,9 +89,9 @@
 
 .button_container{
     margin-top: 2.5rem;
-    width: 100%;
+    width: 80%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -102,4 +103,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.queue_container{
+    display: flex;
+    padding-top: 5vh;
+    height: 10vh;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.queue_click_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.queue_click_container p{
+    color: var(--grey);
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 1.4rem;
 }
