@@ -4,6 +4,7 @@ import style from './Search.module.css'
 
 import Loupe from 'components/Menu/img/research.svg'
 import ImageMusicMoody from 'components/MusicIcon/img/moody.png'
+import ImageArtistMoody from 'components/ResultContent/img/ArtistMoody.PNG'
 import ResultContent from '../../components/ResultContent/ResultContent';
 
 function Search() {
@@ -29,7 +30,7 @@ function Search() {
                         />
 
                         <ResultContent
-                        img={ImageMusicMoody}
+                        img={ImageArtistMoody}
                         title="Moody"
                         category="Artiste"
                         />
