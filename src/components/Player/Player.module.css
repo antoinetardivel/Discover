@@ -106,19 +106,60 @@
 }
 
 .queue_container{
-    display: flex;
-    padding-top: 5vh;
     height: 10vh;
-    width: 80%;
-    justify-content: space-between;
+    width: 100%;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
+.btn_container{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 80%;
+    padding-top: 5vh;
+
+}
 .queue_click_container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50% ,0);
+    z-index: 5;
+    transition: .4s;
+}
+
+.queue_click_container_active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -25vh);
+    z-index: 5;
+    transition: .4s;
+}
+
+.queue_click_container img{
+    transform: rotate(0);
+    transition: .4s;
+}
+
+.queue_click_container_active img{
+    transform: rotate(180deg);
+    transition: .4s;
+}
+
+.queue_click_container_active p{
+    color: var(--grey);
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 1.4rem;    
 }
 
 .queue_click_container p{
@@ -126,4 +167,66 @@
     font-family: 'Poppins';
     font-weight: 200;
     font-size: 1.4rem;
+}
+
+.option_container{
+    width: 5vw;
+}
+
+.playlist_container{
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    background-color: #181818;
+    bottom: -40vh;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    transition: .4s;
+}
+
+.playlist_container_active{
+    position: absolute;
+    width: 100%;
+    height: 35vh;
+    background-color: #181818;
+    bottom: 0;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    transition: .4s;
+
+}
+
+.queue_content_container{
+    display: flex;
+    width: 100%;
+    margin-top: 10vh;
+    justify-content: space-evenly;
+}
+
+.each_queue{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.each_queue p{
+    color: var(--white);
+    font-family: 'Poppins';
+    font-size: 1.4rem;
+}
+
+.title{
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.artiste{
+    font-weight: 200;
+
+}
+
+
+.each_queue img{
+    width: 100%;
+    border-radius: 25px;
 }
