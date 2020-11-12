@@ -6,7 +6,7 @@ import BlurBanner from 'components/BlurBanner/index.js'
 function Artist(props) {
     return(
         <div>
-        <BlurBanner />
+        <BlurBanner imageArtist={props.location.aboutProps.imageArtist} />
             <div className={styles.artist_content_container}>
                 
                 <div className={styles.resume}>
@@ -38,5 +38,7 @@ function Artist(props) {
         </div>
     );
   }
+
+
 
 export default Artist
