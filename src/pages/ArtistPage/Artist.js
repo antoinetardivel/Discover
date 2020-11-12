@@ -29,11 +29,13 @@ function Artist(props) {
                         </div>
                     </div>
                 </div>
-                <h1>Artiste</h1>
-                {console.log(props.location.aboutProps)}
-                <h3>Nom de l'artist : {props.location.aboutProps.artistName}</h3>
-                <p>Image de l'artist</p>
-                <img alt="" src={props.location.aboutProps.imageArtist} />
+                <div>
+                    <div className={styles.titreCarouselContener}>
+                      <h3 id='Discographie' >Discographie</h3>
+                      <h3 id='Playlists' >Playlists</h3>
+                      <h3 id='Podcast' >Podcast</h3>
+                    </div>
+                </div>
             </div>
         </div>
     );
