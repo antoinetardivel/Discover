@@ -3,6 +3,7 @@ import React from 'react'
 import styles from './Player.module.css'
 import PlayerProgressionBar from './PlayerProgressionBar'
 import PlayerBtnContainer from './PlayerBtnContainer'
+import QueueContainer from './QueueContainer'
 
 
 class Player extends React.Component {
@@ -18,6 +19,7 @@ class Player extends React.Component {
                     <PlayerProgressionBar/>
                 </div>
                 <PlayerBtnContainer/>
+                <QueueContainer/>
             </div>      
         )
     }
