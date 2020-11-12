@@ -5,6 +5,7 @@ import BlurBanner from 'components/BlurBanner/index.js'
 import PlaylistList from 'components/PlaylistList/index'
 import MusicList from 'components/MusicList/MusicList'
 import Podcast from 'components/Podcast/index'
+import AlbumIcon from 'components/AlbumIcon/AlbumIcon'
 
 function Artist(props) {
 
@@ -80,13 +81,23 @@ function Artist(props) {
                     </div>
                     <div className={lolololo}  id='DiscographiePart'>
                         <h2>Musiques les plus écoutées</h2>
-                        <MusicList />
+                        <MusicList titreMusics={['Lion\'s tear', 'Nawal', 'Body', 'Silsila Yeh Chahat Ka']} />
+                        <h2>Albums</h2>
+                        <AlbumIcon />
+                        <h2>Titres</h2>
                     </div>
+
+                        
+                
                     <div className={styles.playlistsPart} id='PlaylistsPart'>
                         <PlaylistList />
                     </div>
+
                     <div className={styles.podcastPart} id='PodcastPart'>
                         <h2>Les podcast de l'Artist</h2>
+                        <Podcast src={props.location.aboutProps.imageArtist} artist={props.location.aboutProps.artistName} time='$$min' name="Interview BLA BLA avec ..." />
+                        <Podcast src={props.location.aboutProps.imageArtist} artist={props.location.aboutProps.artistName} time='$$min' name="Interview BLA BLA avec ..." />
+                        <Podcast src={props.location.aboutProps.imageArtist} artist={props.location.aboutProps.artistName} time='$$min' name="Interview BLA BLA avec ..." />
                         <Podcast src={props.location.aboutProps.imageArtist} artist={props.location.aboutProps.artistName} time='$$min' name="Interview BLA BLA avec ..." />
                     </div>
                 </div>
