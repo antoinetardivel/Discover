@@ -37,8 +37,8 @@ class PlayerAppearOnclick extends Component{
         return (
             <div className="test">
                 <p onClick={() => this.hideComponent("playerComponent") } >aaaaa</p>
-                 {playerComponent && <Player />} 
-                 {menuPlayerComponent && <MenuAudioPlayer />} 
+                {playerComponent && <Player />} 
+                {menuPlayerComponent && <MenuAudioPlayer />} 
             </div>
     
             
