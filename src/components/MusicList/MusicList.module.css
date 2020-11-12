@@ -1,0 +1,17 @@
+.ItemList{
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    border-bottom: solid #414141 0.5px;
+    padding-bottom: 1.2rem;
+}
+
+.endList{
+    display: flex;
+    margin-left: 10%;
+}
+
+.optionList{
+    float: right;
+}

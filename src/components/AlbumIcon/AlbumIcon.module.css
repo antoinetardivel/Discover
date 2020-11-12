@@ -1,0 +1,13 @@
+.albumListConter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1.8rem;
+    text-align: center;
+}
+
+.imgAlbum{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 17%;
+}

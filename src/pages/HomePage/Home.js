@@ -1,14 +1,16 @@
 import React from 'react'
-// import { SpotifyContext } from 'components/SpotifyWrapper'
+
 import CoverBlur from 'components/CoverBlur'
 import TopHome from 'components/TopHome'
 import ArtistBubble from 'components/ArtistBubble'
 import Podcast from 'components/Podcast'
+
 import styles from './Home.module.css'
+
 import nekfeu from './img/nekfeu.png'
 
+
 const Home = () => {
-  // const { deviceId, token } = useContext(SpotifyContext);
   return (
     <div className={styles.home_container}>
       <CoverBlur />
@@ -39,4 +41,5 @@ const Home = () => {
 }
 
 export default Home
+
 

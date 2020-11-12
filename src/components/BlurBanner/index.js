@@ -17,7 +17,7 @@ const BlurBanner = (prop) => {
         imgArtist = profilImg
     }
 
-    if (prop.pArtist == 'oui') {
+    if (prop.pArtist === 'oui') {
         filterImg = styles.filterA
         blurImg = styles.blur_img_containerA
     } else {

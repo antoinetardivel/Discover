@@ -32,8 +32,12 @@ class QueueContainer extends React.Component {
                     
                     <QueueMusic/>
                     
-                </div>
-            </div>      
+                    <div className={styles.queue_click_container}>
+                        <img src={Arrow}  alt=' ' />
+                        <p>File d'attente</p>
+                    </div>
+                </div>    
+            </div>  
         )
     }
   
