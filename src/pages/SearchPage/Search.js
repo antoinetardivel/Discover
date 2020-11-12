@@ -1,58 +1,66 @@
-import React from 'react';
 import style from './Search.module.css'
-
+import React, { useContext, useEffect, useState } from 'react'
+import { SpotifyContext } from 'components/SpotifyProvider'
 
 import Loupe from 'components/Menu/img/research.svg'
 import ImageMusicMoody from 'components/MusicIcon/img/moody.png'
 import ImageArtistMoody from 'components/ResultContent/img/ArtistMoody.PNG'
-import ResultContent from '../../components/ResultContent/ResultContent';
+import ResultContent from '../../components/ResultContent/ResultContent'
+
+
 
 function Search() {
+
+
+    const [value , setValue] = useState('');
+    const [tracks , setTracks] = useState([]);
+    const { spotifyApi } = useContext(SpotifyContext);
+    useEffect(() => {
+        
+        const searchTracks = async () => {
+            const tracks = await spotifyApi.searchTracks(value, {limit:5});
+            setTracks(tracks.tracks.items);
+        }
+        if (value.length){
+            searchTracks();
+        }
+        else{
+            setTracks([]);
+        }
+      }, [spotifyApi,value])
+      console.log(tracks)
     return(
            <div className={style.PageSearch}>
 
                     <div className={style.searchHeader}>
                         <img alt="" className={style.searchHeader_loupe} src={Loupe}/>
-                        <input className={style.searchHeader_input} type="text" id="rechercher" name="rechercher" placeholder="Rechercher"/>
+                        <input
+                            className={style.searchHeader_input}
+                            type="text"
+                            id="rechercher"
+                            name="rechercher"
+                            placeholder="Rechercher"
+
+                            onChange={(event) => {
+                                setValue(event.target.value)
+                            }}
+                        />
                     </div>
-
-
-                        <ResultContent
-                        img={ImageMusicMoody}
-                        title="Monarque * Moody"
-                        category="Titre"
-                        />
-
-                        <ResultContent
-                        img={ImageMusicMoody}
-                        title="Black Shape * Moody"
-                        category="Titre"
-                        />
-
-                        <ResultContent
-                        img={ImageArtistMoody}
-                        title="Moody"
-                        category="Artiste"
-                        />
-                        
-
-                   
-
+                    {tracks.length === 0 && (
+                        <p>Pas de résultat... :(</p>
+                    )}
+                    {tracks.map((track) => {
+                        return(
+                            <ResultContent
+                            img={track.album.images[2].url}
+                            title={track.name}
+                            category="Titre"
+                            />
+                        )
+                    })}
            </div>
             
         );
   }
 
 export default Search
-
-/*
-
-<div className={style.content_result}>
-                        <img alt="" className={style.result_img} src={ImageMusicMoody}/>
-                            <div className={style.text}>
-                            <h2 className={style.result_title}>Titre musique * Artiste</h2>
-                            <h3 className={style.result_category}>Titre</h3>
-                            </div>
-                        <img alt="" className={style.result_options} src={option}/>
-                    </div>
-                    */
