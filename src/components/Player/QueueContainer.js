@@ -13,7 +13,7 @@ class QueueContainer extends React.Component {
             <div className={styles.queue_container}>
                 <Like/>
                 <div className={styles.queue_click_container}>
-                    <img src={Arrow}/>
+                    <img src={Arrow}  alt=' ' />
                     <p>File d'attente</p>
                 </div>
                 <Like/>

@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
+import React from 'react'
 import profilImg from './img/profil.jpg'
 import styles from './Account.module.css'
 import Like from '../LikePause/Like'
 import PlayerAppearOnclick from '../PlayerAppearOnclick/index'
-import Player from '../Player'
+// import Player from '../Player'
 
 
 

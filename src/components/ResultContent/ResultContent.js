@@ -7,7 +7,7 @@ const ResultContent = (prop) => {
     console.log(prop.category)
 
     let imgClass;
-    if (prop.category=="Artiste"){
+    if (prop.category==="Artiste"){
         imgClass = Styles.result_img_artist
     }
     else {

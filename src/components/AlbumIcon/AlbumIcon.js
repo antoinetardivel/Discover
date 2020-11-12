@@ -6,15 +6,15 @@ function AlbumIcon(){
     return(
         <div className={style.albumListConter}>
             <div>
-                <img  className={style.imgAlbum} src={albumImg1} />
+                <img  className={style.imgAlbum} src={albumImg1}  alt='pochette de l album '/>
                 <h3>Flawless </h3>  
             </div>
             <div>
-                <img  className={style.imgAlbum} src={albumImg1} />
+                <img  className={style.imgAlbum} src={albumImg1}  alt='pochette de l album '/>
                 <h3>Flawless </h3>  
             </div>
             <div>
-                <img  className={style.imgAlbum} src={albumImg1} />
+                <img  className={style.imgAlbum} src={albumImg1}  alt='pochette de l album '/>
                 <h3>Flawless </h3>  
             </div>
             

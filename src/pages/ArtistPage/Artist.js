@@ -27,13 +27,13 @@ function Artist(props) {
 
     function changeActive(bla) {
         bla.classList.add(styles.activeArtistPart)
-        if (bla == document.getElementById('Discographie')) {
+        if (bla === document.getElementById('Discographie')) {
             document.getElementById('Podcast').classList.remove(styles.activeArtistPart)
             document.getElementById('Playlists').classList.remove(styles.activeArtistPart)
             document.getElementById('PodcastPart').classList.remove(styles.partActive)
             document.getElementById('PlaylistsPart').classList.remove(styles.partActive)
             document.getElementById('DiscographiePart').classList.add(styles.partActive)
-        } else if (bla == document.getElementById('Playlists')) {
+        } else if (bla === document.getElementById('Playlists')) {
             document.getElementById('Discographie').classList.remove(styles.activeArtistPart)
             document.getElementById('Podcast').classList.remove(styles.activeArtistPart)
             document.getElementById('PodcastPart').classList.remove(styles.partActive)
