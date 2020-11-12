@@ -107,8 +107,23 @@
 
 .queue_container{
     display: flex;
+    padding-top: 5vh;
     height: 10vh;
     width: 80%;
     justify-content: space-between;
     align-items: center;
+}
+
+.queue_click_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.queue_click_container p{
+    color: var(--grey);
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 1.4rem;
 }
