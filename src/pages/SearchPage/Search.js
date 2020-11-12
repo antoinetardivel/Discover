@@ -25,7 +25,7 @@ function Search() {
 
                         <ResultContent
                         img={ImageMusicMoody}
-                        title="Black Shapes"
+                        title="Black Shape * Moody"
                         category="Titre"
                         />
 
