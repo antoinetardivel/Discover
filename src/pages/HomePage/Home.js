@@ -23,9 +23,9 @@ const Home = () => {
         </div>
         <h2 className={styles.Artist_title}>Artistes à la une</h2>
         <div className={styles.Artists_container}>
-          <ArtistBubble src={nekfeu} name='Nekfeu' />
-          <ArtistBubble src={nekfeu} name='Nekfeu' />
-          <ArtistBubble src={nekfeu} name='Nekfeu' />
+          <ArtistBubble src={nekfeu} artistName='Nekfeu' />
+          <ArtistBubble src={nekfeu} artistName='Nekfeu' />
+          <ArtistBubble src={nekfeu} artistName='Nekfeu' />
         </div>
         <h2 className={styles.Artist_title}>Podcasts</h2>
         <Podcast src={nekfeu} artist='Nekfeu' time='57min' name="Interview avec le nouv..."/>
