@@ -6,12 +6,12 @@ import BlurBanner from 'components/BlurBanner/index.js'
 function Artist(props) {
     return(
         <div>
-        <BlurBanner imageArtist={props.location.aboutProps.imageArtist} />
+        <BlurBanner imageArtist={props.location.aboutProps.imageArtist} pArtist='oui' />
             <div className={styles.artist_content_container}>
                 
                 <div className={styles.resume}>
                     <div className={styles.abonnement_btn}>
-                        <BoutonAbonnement />
+                        <BoutonAbonnement Artist='oui' />
                     </div>
                     <h1 className={styles.artist_title}>{props.location.aboutProps.artistName}</h1>
                     <div className={styles.info_container}>

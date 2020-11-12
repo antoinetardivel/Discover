@@ -22,10 +22,16 @@ import Styles from './BoutonAbonnement.module.css'
 //   )
 // }
 
-const BoutonAbonnement = ()=>{
+const BoutonAbonnement = (prop)=>{
 
   const [varText, updateText] = useState('S\'abonner');
-  const [syli, updateClass] = useState(Styles.buttonAbonnement);
+  let bla 
+  if(prop.Artist){
+  bla = Styles.buttonAbonnementActive
+}else{
+  bla = Styles.buttonAbonnement
+}
+  const [syli, updateClass] = useState(bla);
 
   const change = () => {
       if(varText === 'S\'abonner'){
@@ -35,11 +41,15 @@ const BoutonAbonnement = ()=>{
           updateText('S\'abonner'); 
       }
 
-      if (syli === Styles.buttonAbonnement) {
+      if(!prop.Artist){
+        if (syli === Styles.buttonAbonnement) {
         updateClass(Styles.buttonAbonnementActive)
       } else {
         updateClass(Styles.buttonAbonnement)
       }
+    }
+      
+      
       
   }
 
