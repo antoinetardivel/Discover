@@ -2,6 +2,7 @@
     margin: 1rem;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     font-size: large;
     border-bottom: solid #414141 0.5px;
     padding-bottom: 1.2rem;
@@ -9,7 +10,9 @@
 
 .endList{
     display: flex;
-    margin-left: 10%;
+    width: 10%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .optionList{
