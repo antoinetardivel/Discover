@@ -4,7 +4,6 @@ import { SpotifyContext } from 'components/SpotifyProvider'
 
 import Loupe from 'components/Menu/img/research.svg'
 import ResultContent from '../../components/ResultContent/ResultContent'
-import loading from '../../components/loading/loading'
 
 
 
@@ -29,7 +28,6 @@ function Search() {
             setfirstSearch(false)
         }
       }, [spotifyApi,value])
-      console.log(tracks)
     return(
            <div className={style.PageSearch}>
 
@@ -52,7 +50,7 @@ function Search() {
                         <p className={style.noResult}>Pas de résultat... :(</p>
                     )}
                     {loadingStatut === true &&(
-                        <loading />
+                        <img className={style.loadingGif} src={'/loading.gif'} />
                     )}
                     {tracks.map((track) => {
                         return(

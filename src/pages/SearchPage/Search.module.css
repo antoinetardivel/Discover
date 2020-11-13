@@ -1,6 +1,7 @@
 .PageSearch {
     background: linear-gradient(180deg, rgba(64,64,64,1) 0%, rgba(4,4,4,1) 100%);
-    height: 100vh;
+    min-height: 80vh;
+    padding-bottom: 20vh;
   }
 
   .searchHeader { 
@@ -39,5 +40,14 @@
         justify-content: center;
         font-family: Monument;
         font-weight: normal;
+    }
+    .loadingGif{
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%,-50%);
+        width: 70px;
+        height: 70px;
+
     }
 
