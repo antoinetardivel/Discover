@@ -20,7 +20,7 @@ const MusicIcon = (prop) => {
   }
    
   return (
-      <div >
+      <div className={Styles.container}>
           <div onClick={popUpTop10}>
             <div className={Styles.imageContener} id={prop.id}>
                 <img src={prop.src} alt="" className={Styles.image} />

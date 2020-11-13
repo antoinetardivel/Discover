@@ -1,24 +1,30 @@
 .imageContener{
-    width: 34vw ;
-    height: 34vw;
+    width: 100%;
+}
+.container{
+    width: 100%;
 }
 
 .image{
-    width: 100%;
-    height: 100%;
-    border-radius: 17%;
+    width: 125px;
+    height: 125px;
+    border-radius: 19px;
 }
 
 .musicName{
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
+    width: auto;
+    text-align: center;
 }
 
 .artistName{
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: lighter;
+    width: auto;
+    text-align: center;
 }
 
 .PopUpUnactive{
