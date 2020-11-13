@@ -58,9 +58,9 @@ function Search() {
                     {loadingStatut === true &&(
                         <img alt="" className={style.loadingGif} src={'/loading.gif'} />
                     )}
-                    {tracks.map((track) => {
+                    {tracks.map((track,i) => {
                         return(
-                            <ResultContent
+                            <ResultContent key={i}
                             img={track.album.images[1].url}
                             title={track.name}
                             artist={track.artists[0].name}

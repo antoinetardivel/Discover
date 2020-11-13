@@ -4,6 +4,7 @@ import { SpotifyContext } from 'components/SpotifyProvider'
 import BoutonAbonnement from 'components/BoutonAbonnement/BoutonAbonnement'
 import Styles from './Top10.module.css'
 import PlayTop10 from 'components/PlayTop10/PlayTop10'
+import MusicIcon from 'components/MusicIcon/MusicIcon'
 
 function Top10() {
 
@@ -16,19 +17,20 @@ function Top10() {
         "3S89XqE7SxSgzAUhgCigAk",/*6*/
         "39UtiRhuzDEvj1CD39QvjG",/*7*/
         "6K9QPIt8AR422heY9O372w",/*8*/
-        "7bkxJOCyc7dQyQQrOcwXdF",/*9manque*/
+        "60AY8gRW9BjLgxeuqFVbTs",/*9*/
         "7bkxJOCyc7dQyQQrOcwXdF"/*10*/
     ];
     const [tracks , setTracks] = useState([]);
+    const [artists , setArtists] = useState([]);
     const { spotifyApi } = useContext(SpotifyContext);
     useEffect(() => {
         const searchTracks = async (i) => {
             const track = await spotifyApi.getTrack(top10[i]);
-            // setTracks(tracks.push(track));
-            // setTracks({ tracks: [...this.tracks.tracks, track] })
             setTracks(tracks => [...tracks, track]);
             console.log(track);
-            // console.log(top10[i]);
+            const artist = await spotifyApi.getArtist(track.artists[0].id);
+            console.log(artist.images[1].url);
+            setArtists(artists => [...artists, artist.images[1].url]);
         }
         for (let i = 0; i < top10.length; i++) {
             searchTracks(i);
@@ -46,16 +48,15 @@ function Top10() {
                 <BoutonAbonnement /> 
             </div>
             <div className={Styles.MusicsContener} >
-                {/* <div className={Styles.topElement}>
-                    <MusicIcon src={ImageMusicMoody} 
-                        imageArtist={ImageArtistMoody}
-                        presArtist="Moody, de son vrai prénom Loïc, est originaire de Agen, et a commencé la musique à l'âge de 15 ans. Auteur de l'EP  Flawless Portrait, il a publié son dernier..." 
-                        musicName='Monarque' 
-                        artistName='Moody1'  />
-                </div> */}
-                {tracks.map((track) => {
+                {tracks.map((track,i) => {
                         return(
-                            <p key={track.id}>{track.name}</p>
+                            <div key={i} className={Styles.topElement}>
+                                <MusicIcon src={track.album.images[1].url} 
+                                    imageArtist={artists[i]}
+                                    presArtist="Moody, de son vrai prénom Loïc, est originaire de Agen, et a commencé la musique à l'âge de 15 ans. Auteur de l'EP  Flawless Portrait, il a publié son dernier..." 
+                                    musicName={track.name}
+                                    artistName={track.artists[0].name}  />
+                            </div>
                         )
                     })}
             </div>

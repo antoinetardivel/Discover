@@ -9,7 +9,6 @@
     .ArtistPhoto{
         width: 125px;
         height: 125px;
-        background-color: white;
         border-radius: 50%;
         cursor: pointer;
     }
