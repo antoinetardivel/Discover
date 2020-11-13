@@ -8,7 +8,9 @@
 .top10Titre{
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    margin: 0 0 5vw 10vw;
+    margin: 0 0 30px 0;
+    font-family: Monument Extended;
+    font-weight: normal;
 }
 
 .top10p{
@@ -18,25 +20,28 @@
 }
 
 .top10Action{
-    margin: 5vw 5vw 5vw 2vw;
+    margin: 30px 15px 30px 15px;
     display: flex;
-    flex-direction: row;
+    display: flex;
+    align-items: center;
 }
 
 .playAction{
     margin: 0.3vw 4vw 0 0;
+    cursor: pointer;
 }
 
 .MusicsContener{
     margin: 0 15px 150px 15px;
-}
-
-.MusicsRowContener{
     display: flex;
-    flex-direction: row; 
-    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
-.first{
-    margin-right: 38px;
+.topElement{
+    width: 43.55;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.topElement:last-child(){
+    margin-right: 100%;
 }
