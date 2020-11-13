@@ -11,6 +11,28 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    animation: appear .4s ease;
+    transition: .4s;
+}
+
+@keyframes appear{
+    from{
+        bottom: -100vh;
+    }
+    to{
+        bottom: 9vh;
+    }
+}
+
+
+
+@keyframes disappear{
+    from{
+        bottom: 9vh;
+    }
+    to{
+        bottom: -100vh;
+    }
 }
 
 .cross_container{

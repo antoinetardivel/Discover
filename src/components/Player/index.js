@@ -15,11 +15,15 @@ const Player = ()=>  {
     
 
     const handleClickSong = ()=>{
-       context.setPlayerOpen(context.isPlayerOpen = false)
+        let player = document.getElementById('playerContainer');
+        player.style.bottom = -100 + "vh";
+        setTimeout(()=>{
+               context.setPlayerOpen(context.isPlayerOpen = false)
+        },400)
     }
 
     return (
-        <div className={styles.player_container}>
+        <div id="playerContainer" className={styles.player_container}>
             <div onClick={handleClickSong} className={styles.cross_container}>
                 <div className={styles.cross1}></div>
                 <div className={styles.cross2}></div>
