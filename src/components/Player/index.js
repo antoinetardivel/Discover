@@ -1,19 +1,39 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 
 import styles from './Player.module.css'
 import PlayerProgressionBar from './PlayerProgressionBar'
 import PlayerBtnContainer from './PlayerBtnContainer'
 import QueueContainer from './QueueContainer'
 
+
 import AppContext from '../../AppContext'
+import { SpotifyContext } from '../SpotifyProvider'
 
 
 const Player = ()=>  {
    
     const context = useContext(AppContext);
-    let audio = new Audio(context.music);
-    audio.play();
+
+    const spotifyContext = useContext(SpotifyContext);
+
+    // let audio = new Audio(context.music);
+    // audio.spotifyApi.Play();
+
+
     console.log(context.music)
+    console.log(spotifyContext.deviceId)
+
+    // useEffect(() => {
+        const data = {
+            "device_Id": spotifyContext.deviceId,
+                "uris": [context.music] 
+        }    
+        spotifyContext.spotifyApi.play(data)
+        .then(function() {  console.log('play')      })  
+    // },[context.music])
+        
+
+           
     
     
 
