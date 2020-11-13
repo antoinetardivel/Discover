@@ -41,6 +41,7 @@
     color: var(--white);
     font-size: 2.6rem;
     padding-top: 2.1rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .info_container{
@@ -70,12 +71,16 @@
     margin-top: 1.8rem;
     font-size: larger;
     color: #727272;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
 }
 
 .activeArtistPart{
     color: whitesmoke;
     padding-bottom: 1rem;
     border-bottom: solid #0BA2CA 2px ;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
 }
 
 .discographiePart{
