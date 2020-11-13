@@ -6,9 +6,9 @@ import Like from 'components/LikePause/Like'
 
 function MusicList(porp) {
    let num = 1 
-    const listMusic = porp.titreMusics.map((nomMusic) =>
+    const listMusic = porp.titreMusics.map((nomMusic,i) =>
 
-            <li className={styles.ItemList}> { num++ + ' ' + nomMusic} <div className={styles.endList} > <Like /> <img alt="" className={styles.optionList} src={option}/> </div> </li>
+            <li className={styles.ItemList} key={i}> { num++ + ' ' + nomMusic} <div className={styles.endList} > <Like /> <img alt="" className={styles.optionList} src={option}/> </div> </li>
             );
             
             

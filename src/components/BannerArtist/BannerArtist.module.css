@@ -37,7 +37,7 @@
 .blur_img_container img{
     position: absolute;
     filter: blur(2px) grayscale(.5); 
-    transform: translate(-50%, -50%) scale(5);
+    transform: translate(-50%, -50%) scale(1);
     top: 20%;
     left: 50%;
 }

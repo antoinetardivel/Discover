@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Artist.module.css';
 import BoutonAbonnement from 'components/BoutonAbonnement/BoutonAbonnement.js'
-import BlurBanner from 'components/BlurBanner/index.js'
+import BannerArtist from 'components/BannerArtist/index.js'
 import PlaylistList from 'components/PlaylistList/index'
 import MusicList from 'components/MusicList/MusicList'
 import Podcast from 'components/Podcast/index'
@@ -50,7 +50,7 @@ function Artist(props) {
 
     return(
         <div>
-        <BlurBanner imageArtist={props.location.aboutProps.imageArtist} pArtist='oui' />
+        <BannerArtist imageArtist={props.location.aboutProps.imageArtist} pArtist='oui' />
             <div className={styles.artist_content_container}>
                 
                 <div className={styles.resume}>

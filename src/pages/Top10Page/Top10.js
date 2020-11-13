@@ -29,8 +29,8 @@ function Top10() {
             setTracks(tracks => [...tracks, track]);
             console.log(track);
             const artist = await spotifyApi.getArtist(track.artists[0].id);
-            console.log(artist.images[1].url);
-            setArtists(artists => [...artists, artist.images[1].url]);
+            console.log(artist.images[0].url);
+            setArtists(artists => [...artists, artist.images[0].url]);
         }
         for (let i = 0; i < top10.length; i++) {
             searchTracks(i);
