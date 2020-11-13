@@ -60,13 +60,8 @@ function Search() {
                     )}
                     {tracks.map((track) => {
                         return(
-<<<<<<< HEAD
-                            <ResultContent key={track.id}
-                            img={track.album.images[2].url}
-=======
                             <ResultContent
                             img={track.album.images[1].url}
->>>>>>> 65cf0346ce3ec484b6f92f5ef4a62340851a8a82
                             title={track.name}
                             artist={track.artists[0].name}
                             duration={track.duration_ms}
