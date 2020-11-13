@@ -16,7 +16,7 @@ const PlayerAppearOnclick = ()=>{
   return (
     <div className="test">
       {context.isPlayerOpen && <Player />} 
-      <MenuAudioPlayer />
+      {context.isPlayerOpen !== true && <MenuAudioPlayer />}
     </div>
   )
 }
