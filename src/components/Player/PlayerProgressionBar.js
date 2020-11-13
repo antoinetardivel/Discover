@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import styles from './Player.module.css'
-import album from './img/album.png'
 import AppContext from '../../AppContext'
 import ImgPlayer from './ImgPlayer';
 
