@@ -11,6 +11,9 @@ import AppContext from '../../AppContext'
 const Player = ()=>  {
    
     const context = useContext(AppContext);
+    let audio = new Audio(context.music);
+    audio.play();
+    console.log(context.music)
     
     
 
@@ -28,14 +31,15 @@ const Player = ()=>  {
                 <div className={styles.cross1}></div>
                 <div className={styles.cross2}></div>
             </div>
-            <h1>Like lightning</h1>
-            <h2>Fools</h2>
+            <h1>{context.title}</h1>
+            <h2>{context.artist}</h2>
             <div className={styles.player_progress_bar_container}>
                 
-                <PlayerProgressionBar/>
+                <PlayerProgressionBar imgAlbum={context.img}/>
             </div>
             <PlayerBtnContainer/>
             <QueueContainer/>
+
         </div>      
     )
 }

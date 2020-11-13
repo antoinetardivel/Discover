@@ -14,7 +14,6 @@ class QueueContainer extends React.Component {
     }
   
     render(){
-        console.log(this.state.isActive)
         const isOn = this.state.isActive;
         return (
             <div className={styles.queue_container}>

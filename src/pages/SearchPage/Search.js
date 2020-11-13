@@ -32,6 +32,8 @@ function Search() {
             setfirstSearch(false)
         }
       }, [spotifyApi,value])
+
+      console.log(tracks);
     return(
         <div className={style.PageSearch}>
 
@@ -58,10 +60,17 @@ function Search() {
                     )}
                     {tracks.map((track) => {
                         return(
+<<<<<<< HEAD
                             <ResultContent key={track.id}
                             img={track.album.images[2].url}
+=======
+                            <ResultContent
+                            img={track.album.images[1].url}
+>>>>>>> 65cf0346ce3ec484b6f92f5ef4a62340851a8a82
                             title={track.name}
-                            category="Titre"
+                            artist={track.artists[0].name}
+                            duration={track.duration_ms}
+                            music={track.uri}
                             />
                         )
                     })}

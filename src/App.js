@@ -9,7 +9,12 @@ import Search from './pages/SearchPage/Search'
 import Artist from './pages/ArtistPage/Artist'
 import Playlist from './pages/PlaylistPage/Playlist'
 import SpotifyProvider from './components/SpotifyProvider'
+<<<<<<< HEAD
 import { useState } from 'react'
+=======
+import { useContext, useMemo, useState } from 'react'
+import { SpotifyContext } from './components/SpotifyProvider'
+>>>>>>> 65cf0346ce3ec484b6f92f5ef4a62340851a8a82
 import Spotify from './pages/SpotifyPage/Spotify'
 import AppContext from './AppContext'
 
@@ -22,13 +27,49 @@ function App() {
 
 
   const [isPlayerOpen, setPlayerOpen] = useState(false);
+  const [title, updateTitle] = useState('titre');
+  const [artist, updateArtiste] = useState('artiste');
+  const [img, updateImg] = useState('img');
+  const [duration, updateDuration] = useState('duration');
+  const [music, updateMusic] = useState('music');
 
-  const appContextValue = {
-    isPlayerOpen,
-    setPlayerOpen
-
+  const setTitle = (title)=>{
+    updateTitle(title);
   }
 
+  const setArtist = (artist)=>{
+    updateArtiste(artist);
+  }
+
+  const setImg = (img)=>{
+    updateImg(img);
+  }
+
+  const setDuration = (duration)=>{
+    updateDuration(duration);
+  }
+
+  const setMusic = (music)=>{
+    updateMusic(music);
+  }
+
+  
+  const appContextValue = useMemo(() => ({
+    isPlayerOpen,
+    setPlayerOpen,
+    title,
+    setTitle, 
+    artist,
+    setArtist,
+    img,
+    setImg,
+    duration,
+    setDuration,
+    music,
+    setMusic 
+    
+  }),
+    [title,isPlayerOpen,artist,img,duration,music])
 
   return (
     <AppContext.Provider value={appContextValue}>
