@@ -4,14 +4,16 @@
     border: 2px solid #28F299;
     border-radius: 10px;
     outline-style:none;
-    padding: 2px 15px 2px 15px;
+    padding: 0.1px 15px 0.1px 15px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .buttonAbonnementActive{
     background : linear-gradient(to right, #2ACD85,#0BA2CA);
     color: black;
     border: none;
-    padding: 4px 20px 4px 20px;
+    padding: 2px 20px 2px 20px;
     border-radius: 10px;
     outline-style:none;
+    font-family: 'Poppins', sans-serif;
 }

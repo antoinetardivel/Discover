@@ -11,9 +11,12 @@
 
 .musicName{
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
 }
 
 .artistName{
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: lighter;
 }
