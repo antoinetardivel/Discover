@@ -1,4 +1,4 @@
-import React, {Component, useContext} from 'react'
+import React, {useContext} from 'react'
 import Player from '../Player'
 import MenuAudioPlayer from '../Menu/MenuAudioPlayer'
 import AppContext from '../../AppContext'
@@ -9,7 +9,7 @@ import AppContext from '../../AppContext'
 
 const PlayerAppearOnclick = ()=>{
   const context = useContext(AppContext);
-  console.log(context);
+
 
   
 

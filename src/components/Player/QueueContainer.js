@@ -20,10 +20,10 @@ class QueueContainer extends React.Component {
             <div className={styles.queue_container}>
                 <div className={styles.btn_container}>
                     <div className={styles.option_container}>
-                        <img src={option}/>
+                        <img alt="" src={option}/>
                     </div>
                     <div onClick={()=> this.setState({isActive: !isOn})} className={isOn ? styles.queue_click_container : styles.queue_click_container_active}>
-                        <img src={Arrow}/>
+                        <img alt="" src={Arrow}/>
                         <p>File d'attente</p>
                     </div>
                     <Like/>

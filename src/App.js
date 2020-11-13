@@ -3,7 +3,6 @@ import './App.css'
 import {BrowserRouter as Router , Switch, Route} from 'react-router-dom';
 import Home from 'pages/HomePage/Home';
 import Nav from './components/Menu/index'
-import MenuAudioPlayer from './components/Menu/MenuAudioPlayer'
 import Account from './pages/UserPage/Account'
 import Top10 from './pages/Top10Page/Top10'
 import Search from './pages/SearchPage/Search'
@@ -14,7 +13,6 @@ import { useContext, useState } from 'react'
 import { SpotifyContext } from './components/SpotifyProvider'
 import Spotify from './pages/SpotifyPage/Spotify'
 import AppContext from './AppContext'
-import PlayerAppearOnclick from './components/PlayerAppearOnclick/index'
 
 function App() {
   const { 
@@ -32,7 +30,6 @@ function App() {
 
   }
 
-  console.log(appContextValue)
 
   return (
     <AppContext.Provider value={appContextValue}>

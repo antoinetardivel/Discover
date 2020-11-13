@@ -55,7 +55,7 @@ function Search() {
                         <p className={style.noResult}>Pas de résultat... :(</p>
                     )}
                     {loadingStatut === true &&(
-                        <img className={style.loadingGif} src={'/loading.gif'} />
+                        <img alt="" className={style.loadingGif} src={'/loading.gif'} />
                     )}
                     {tracks.map((track) => {
                         return(

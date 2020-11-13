@@ -1,9 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import profilImg from './img/profil.jpg'
 import styles from './Account.module.css'
-import Like from '../LikePause/Like'
 import PlayerAppearOnclick from '../PlayerAppearOnclick/index'
-import AppContext from '../../AppContext'
 import Eachsong from './EachSongComponent'
 // import Player from '../Player'
 

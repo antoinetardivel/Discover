@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import styles from './Account.module.css'
 import AccountEachSong from './AccountEachSong'
 import BtnGradient from '../BtnGradient/index'
