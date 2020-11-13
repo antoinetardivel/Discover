@@ -13,17 +13,36 @@
     flex-direction: column;
 }
 
-.player_container::after{
+.cross_container{
     content: '';
     position: absolute;
-    top: -5%;
+    top: -10%;
     left: 50%;
+    width: 15vw;
+    height: 15vw;
     transform: translateX(-50%);
-    background-color: #363636;
-    border-radius: 30px;
-    width: 20%;
-    height: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
+
+.cross1{
+    position: absolute; background-color: #000;
+    border-radius: 30px;
+    width: 80%;
+    height: 5px;
+    transform: rotate(45deg);
+}
+
+.cross2{
+    position: absolute; background-color: #000;
+    border-radius: 30px;
+    width: 80%;
+    height: 5px;
+    transform: rotate(-45deg);
+}
+
 
 .player_container h1, .player_container h2{
     color: var(--white);
