@@ -84,6 +84,17 @@
     bottom: 10vh;
     background-color: #181818;
     z-index: 39;
+    animation: appear .4s ease;
+    transition: .4s;
+}
+
+@keyframes appear{
+    from{
+        bottom: -100vh;
+    }
+    to{
+        bottom: 10vh;
+    }
 }
 
 .audio_player_img{

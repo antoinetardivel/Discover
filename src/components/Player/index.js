@@ -19,7 +19,7 @@ const Player = ()=>  {
         player.style.bottom = -100 + "vh";
         setTimeout(()=>{
                context.setPlayerOpen(context.isPlayerOpen = false)
-        },400)
+        },600)
     }
 
     return (
