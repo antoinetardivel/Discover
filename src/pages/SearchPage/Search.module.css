@@ -30,4 +30,14 @@
         font-size: 15px;
         outline: none;
     }
+    .noResult{
+        display: flex;
+        color: white;
+        font-size: 18px;
+        margin-top: calc(50vh - 87.5px - 9px);
+        width: 100%;
+        justify-content: center;
+        font-family: Monument;
+        font-weight: normal;
+    }
 

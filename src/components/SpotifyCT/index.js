@@ -110,7 +110,7 @@ const SpotifyCT = () => {
     const loadAlbums = async () => {
       const results = await spotifyApi.getArtistAlbums('0NPc0q4DoKJHjMaScAgneP')
       setAlbums(results.items)
-      console.log("coucou", results.items)
+      console.log(results.items)
     }
     loadAlbums();
   }, [spotifyApi])
