@@ -12,7 +12,6 @@ import PlayerAppearOnclick from '../../components/PlayerAppearOnclick/index'
 function Search() {
 
     
-
     const [value , setValue] = useState('');
     const [firstSearch , setfirstSearch] = useState(false);
     const [loadingStatut , setloadingStatut] = useState(false);
@@ -59,7 +58,7 @@ function Search() {
                     )}
                     {tracks.map((track) => {
                         return(
-                            <ResultContent
+                            <ResultContent key={track.id}
                             img={track.album.images[2].url}
                             title={track.name}
                             category="Titre"

@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react'
+import React, {useContext } from 'react'
 import Styles from './ResultContent.module.css'
 
 import option from './img/option.svg'
@@ -16,7 +16,6 @@ const ResultContent = (prop) => {
         context.setPlayerOpen(context.isPlayerOpen = true)
        
     }
-    console.log(prop.category)
 
     let imgClass;
     if (prop.category==="Artiste"){

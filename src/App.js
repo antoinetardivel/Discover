@@ -9,17 +9,16 @@ import Search from './pages/SearchPage/Search'
 import Artist from './pages/ArtistPage/Artist'
 import Playlist from './pages/PlaylistPage/Playlist'
 import SpotifyProvider from './components/SpotifyProvider'
-import { useContext, useState } from 'react'
-import { SpotifyContext } from './components/SpotifyProvider'
+import { useState } from 'react'
 import Spotify from './pages/SpotifyPage/Spotify'
 import AppContext from './AppContext'
 
 function App() {
-  const { 
-    spotifyApi, 
-    deviceId,
-    token,
-    player } = useContext(SpotifyContext);
+  // const { 
+  //   spotifyApi, 
+  //   deviceId,
+  //   token,
+  //   player } = useContext(SpotifyContext);
 
 
   const [isPlayerOpen, setPlayerOpen] = useState(false);
