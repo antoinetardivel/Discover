@@ -4,7 +4,7 @@ import { SpotifyContext } from 'components/SpotifyProvider'
 
 import Loupe from 'components/Menu/img/research.svg'
 import ResultContent from '../../components/ResultContent/ResultContent'
-import loading from '../../components/loading/loading'
+
 import PlayerAppearOnclick from '../../components/PlayerAppearOnclick/index'
 
 
@@ -33,7 +33,6 @@ function Search() {
             setfirstSearch(false)
         }
       }, [spotifyApi,value])
-      console.log(tracks)
     return(
         <div className={style.PageSearch}>
 
@@ -46,31 +45,32 @@ function Search() {
                     name="rechercher"
                     placeholder="Rechercher"
 
-                    onChange={(event) => {
-                        setValue(event.target.value)
-                        setfirstSearch(true)
-                    }}
-                />
-            </div>
-            {tracks.length === 0 && firstSearch === true && loadingStatut === false &&(
-                <p className={style.noResult}>Pas de résultat... :(</p>
-            )}
-            {loadingStatut === true &&(
-                <loading />
-            )}
-            {tracks.map((track) => {
-                return(
-                    <ResultContent
-                    img={track.album.images[2].url}
-                    title={track.name}
-                    category="Titre"
-                    />
-                )
-            })}
-            <PlayerAppearOnclick/>
-        </div>
-        
-    );
+                            onChange={(event) => {
+                                setValue(event.target.value)
+                                setfirstSearch(true)
+                            }}
+                        />
+                    </div>
+                    {tracks.length === 0 && firstSearch === true && loadingStatut === false &&(
+                        <p className={style.noResult}>Pas de résultat... :(</p>
+                    )}
+                    {loadingStatut === true &&(
+                        <img className={style.loadingGif} src={'/loading.gif'} />
+                    )}
+                    {tracks.map((track) => {
+                        return(
+                            <ResultContent
+                            img={track.album.images[2].url}
+                            title={track.name}
+                            category="Titre"
+                            />
+                        )
+                    })}
+                    
+             <PlayerAppearOnclick/>
+           </div>
+            
+        );
   }
 
 export default Search
