@@ -38,7 +38,7 @@
         margin-top: calc(50vh - 87.5px - 9px);
         width: 100%;
         justify-content: center;
-        font-family: Monument;
+        font-family: 'Poppins', sans-serif;
         font-weight: normal;
     }
     .loadingGif{

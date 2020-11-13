@@ -22,14 +22,18 @@
     .NameArtist{
         font-size: 16px;
         color:white;
+        font-family: 'Poppins', sans-serif;
     }
     .TimePodcast{
         font-size: 14px;
         color:white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: lighter;
     }
     .NamePodcast{
         font-size: 14px;
         color:white;
+        font-family: 'Poppins', sans-serif;
     }
     .cover{
         width: 50px;

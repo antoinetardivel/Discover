@@ -12,7 +12,7 @@
         color: white;
         font-size: 20px;
         margin-bottom: 30px;
-        font-family: Monument;
+        font-family: 'Poppins', sans-serif;
         font-weight: normal;
     }
     .PlaylistDiscovery_container{
@@ -34,6 +34,8 @@
     .Dicovery_title{
         color: white;
         font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: lighter;
     }
     .SouligneDiscovery{
         height: 1px;
@@ -63,7 +65,7 @@
         font-size: 20px;
         margin-top: 40px;
         margin-bottom: 30px;
-        font-family: Monument;
+        font-family: 'Poppins', sans-serif;
         font-weight: normal;
     }
 

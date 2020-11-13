@@ -11,16 +11,37 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    animation: appear .4s ease;
+    transition: .4s;
+}
+
+@keyframes appear{
+    from{
+        bottom: -100vh;
+    }
+    to{
+        bottom: 9vh;
+    }
+}
+
+
+
+@keyframes disappear{
+    from{
+        bottom: 9vh;
+    }
+    to{
+        bottom: -100vh;
+    }
 }
 
 .cross_container{
     content: '';
     position: absolute;
-    top: -10%;
-    left: 50%;
+    top: 2%;
+    right: 5%;
     width: 15vw;
     height: 15vw;
-    transform: translateX(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
