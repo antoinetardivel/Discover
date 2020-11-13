@@ -1,9 +1,7 @@
-import React, {Component} from 'react'
+import React from 'react'
 import BlurBanner from '../BlurBanner'
 import AccountBanner from './AccountBanner'
 import AccountContent from './AccountContent'
-import Player from '../Player'
-import PlayerAppearOnclick from '../PlayerAppearOnclick/index'
 
 
 
