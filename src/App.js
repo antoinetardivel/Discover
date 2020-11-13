@@ -9,7 +9,7 @@ import Search from './pages/SearchPage/Search'
 import Artist from './pages/ArtistPage/Artist'
 import Playlist from './pages/PlaylistPage/Playlist'
 import SpotifyProvider from './components/SpotifyProvider'
-import { useContext, useState } from 'react'
+import { useContext, useMemo, useState } from 'react'
 import { SpotifyContext } from './components/SpotifyProvider'
 import Spotify from './pages/SpotifyPage/Spotify'
 import AppContext from './AppContext'
@@ -23,13 +23,19 @@ function App() {
 
 
   const [isPlayerOpen, setPlayerOpen] = useState(false);
+  const [title, updateTitle] = useState('titre');
 
-  const appContextValue = {
-    isPlayerOpen,
-    setPlayerOpen
-
+  const setTitle = (title)=>{
+    updateTitle(title);
   }
 
+  
+  const appContextValue = useMemo(() => ({
+    isPlayerOpen,
+    setPlayerOpen,
+    title,
+    setTitle }),
+    [title,isPlayerOpen])
 
   return (
     <AppContext.Provider value={appContextValue}>

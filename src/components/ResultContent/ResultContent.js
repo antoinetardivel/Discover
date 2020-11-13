@@ -10,13 +10,12 @@ const ResultContent = (prop) => {
     
     
 
-    const handleClickSong = ()=>{
+    const handleClickSong = (title)=>{       
+        context.setPlayerOpen(context.isPlayerOpen = true);
+        context.setTitle(title);
         
-        
-        context.setPlayerOpen(context.isPlayerOpen = true)
        
     }
-    console.log(prop.category)
 
     let imgClass;
     if (prop.category==="Artiste"){
@@ -28,7 +27,7 @@ const ResultContent = (prop) => {
 
 
     return (
-        <div onClick={handleClickSong} className={Styles.content_result}>
+        <div onClick={()=> handleClickSong(prop.title)} className={Styles.content_result}>
                 <img alt="" className={imgClass} src={prop.img}/>
 
                 <div className={Styles.text}>
