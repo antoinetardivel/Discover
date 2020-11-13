@@ -3,8 +3,6 @@ import React, { useContext, useEffect, useState } from 'react'
 import { SpotifyContext } from 'components/SpotifyProvider'
 
 import Loupe from 'components/Menu/img/research.svg'
-import ImageMusicMoody from 'components/MusicIcon/img/moody.png'
-import ImageArtistMoody from 'components/ResultContent/img/ArtistMoody.PNG'
 import ResultContent from '../../components/ResultContent/ResultContent'
 
 
@@ -18,7 +16,7 @@ function Search() {
     useEffect(() => {
         
         const searchTracks = async () => {
-            const tracks = await spotifyApi.searchTracks(value, {limit:5});
+            const tracks = await spotifyApi.searchTracks(value, {limit:20});
             setTracks(tracks.tracks.items);
         }
         if (value.length){
@@ -47,7 +45,7 @@ function Search() {
                         />
                     </div>
                     {tracks.length === 0 && (
-                        <p>Pas de résultat... :(</p>
+                        <p className={style.noResult}>Pas de résultat... :(</p>
                     )}
                     {tracks.map((track) => {
                         return(
