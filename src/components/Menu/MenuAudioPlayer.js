@@ -1,20 +1,22 @@
-import React, {Component} from 'react'
+import React, { useContext} from 'react'
 import styles from './Menu.module.css'
 import MenuProgressBar from './MenuProgressBar'
 import Like from '../LikePause/Like'
 import Play from '../LikePause/Play'
 
 import pochette from './img/test_pochette.svg'
+import AppContext from '../../AppContext'
 
 
 
 
 
-class MenuAudioPlayer extends Component{
+const MenuAudioPlayer = ()=>{
 
     
-    render(){
+
         
+    const context = useContext(AppContext);
     
         return (
             <div className={styles.audio_player_container}>
@@ -35,7 +37,6 @@ class MenuAudioPlayer extends Component{
             
     
         )
-    }
     
   }
 

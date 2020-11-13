@@ -27,6 +27,7 @@ function App() {
   const [artist, updateArtiste] = useState('artiste');
   const [img, updateImg] = useState('img');
   const [duration, updateDuration] = useState('duration');
+  const [music, updateMusic] = useState('music');
 
   const setTitle = (title)=>{
     updateTitle(title);
@@ -44,6 +45,10 @@ function App() {
     updateDuration(duration);
   }
 
+  const setMusic = (music)=>{
+    updateMusic(music);
+  }
+
   
   const appContextValue = useMemo(() => ({
     isPlayerOpen,
@@ -55,10 +60,12 @@ function App() {
     img,
     setImg,
     duration,
-    setDuration 
+    setDuration,
+    music,
+    setMusic 
     
   }),
-    [title,isPlayerOpen,artist,img,duration])
+    [title,isPlayerOpen,artist,img,duration,music])
 
   return (
     <AppContext.Provider value={appContextValue}>

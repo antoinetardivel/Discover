@@ -34,7 +34,7 @@ function Search() {
         }
       }, [spotifyApi,value])
 
-
+      console.log(tracks);
     return(
         <div className={style.PageSearch}>
 
@@ -66,6 +66,7 @@ function Search() {
                             title={track.name}
                             artist={track.artists[0].name}
                             duration={track.duration_ms}
+                            music={track.uri}
                             />
                         )
                     })}

@@ -10,12 +10,13 @@ const ResultContent = (prop) => {
     
     
 
-    const handleClickSong = (title,artist,img,duration)=>{       
+    const handleClickSong = (title,artist,img,duration,music)=>{       
         context.setPlayerOpen(context.isPlayerOpen = true);
         context.setTitle(title);
         context.setArtist(artist);
         context.setImg(img);
         context.setDuration(duration);
+        context.setMusic(music);
        
     }
 
@@ -33,10 +34,12 @@ const ResultContent = (prop) => {
         prop.title,
         prop.artist,
         prop.img,
-        prop.duration)}
+        prop.duration,
+        prop.music)}
          className={Styles.content_result}>
                 <img alt="" className={imgClass} src={prop.img}/>
                 <p className={Styles.dn}>{prop.duration}</p>
+                <p className={Styles.dn}>{prop.music}</p>
                 <div className={Styles.text}>
                     <h2 className={Styles.result_title}>{prop.title}</h2>
                     <h3 className={Styles.result_category}>{prop.artist}</h3>

@@ -11,6 +11,9 @@ import AppContext from '../../AppContext'
 const Player = ()=>  {
    
     const context = useContext(AppContext);
+    let audio = new Audio(context.music);
+    audio.play();
+    console.log(context.music)
     
     
 
@@ -36,6 +39,7 @@ const Player = ()=>  {
             </div>
             <PlayerBtnContainer/>
             <QueueContainer/>
+
         </div>      
     )
 }
