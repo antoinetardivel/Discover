@@ -33,6 +33,8 @@ function Search() {
             setfirstSearch(false)
         }
       }, [spotifyApi,value])
+
+
     return(
         <div className={style.PageSearch}>
 
@@ -60,9 +62,10 @@ function Search() {
                     {tracks.map((track) => {
                         return(
                             <ResultContent
-                            img={track.album.images[2].url}
+                            img={track.album.images[1].url}
                             title={track.name}
-                            category="Titre"
+                            artist={track.artists[0].name}
+                            duration={track.duration_ms}
                             />
                         )
                     })}

@@ -11,7 +11,6 @@ import AppContext from '../../AppContext'
 const Player = ()=>  {
    
     const context = useContext(AppContext);
-    console.log(context);
     
     
 
@@ -30,10 +29,10 @@ const Player = ()=>  {
                 <div className={styles.cross2}></div>
             </div>
             <h1>{context.title}</h1>
-            <h2>Fools</h2>
+            <h2>{context.artist}</h2>
             <div className={styles.player_progress_bar_container}>
                 
-                <PlayerProgressionBar/>
+                <PlayerProgressionBar imgAlbum={context.img}/>
             </div>
             <PlayerBtnContainer/>
             <QueueContainer/>

@@ -10,10 +10,12 @@ const ResultContent = (prop) => {
     
     
 
-    const handleClickSong = (title)=>{       
+    const handleClickSong = (title,artist,img,duration)=>{       
         context.setPlayerOpen(context.isPlayerOpen = true);
         context.setTitle(title);
-        
+        context.setArtist(artist);
+        context.setImg(img);
+        context.setDuration(duration);
        
     }
 
@@ -27,12 +29,17 @@ const ResultContent = (prop) => {
 
 
     return (
-        <div onClick={()=> handleClickSong(prop.title)} className={Styles.content_result}>
+        <div onClick={()=> handleClickSong(
+        prop.title,
+        prop.artist,
+        prop.img,
+        prop.duration)}
+         className={Styles.content_result}>
                 <img alt="" className={imgClass} src={prop.img}/>
-
+                <p className={Styles.dn}>{prop.duration}</p>
                 <div className={Styles.text}>
                     <h2 className={Styles.result_title}>{prop.title}</h2>
-                    <h3 className={Styles.result_category}>{prop.category}</h3>
+                    <h3 className={Styles.result_category}>{prop.artist}</h3>
                 </div>                       
                 <img alt="" className={Styles.result_options} src={option}/>
         </div>

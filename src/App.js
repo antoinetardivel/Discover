@@ -24,9 +24,24 @@ function App() {
 
   const [isPlayerOpen, setPlayerOpen] = useState(false);
   const [title, updateTitle] = useState('titre');
+  const [artist, updateArtiste] = useState('artiste');
+  const [img, updateImg] = useState('img');
+  const [duration, updateDuration] = useState('duration');
 
   const setTitle = (title)=>{
     updateTitle(title);
+  }
+
+  const setArtist = (artist)=>{
+    updateArtiste(artist);
+  }
+
+  const setImg = (img)=>{
+    updateImg(img);
+  }
+
+  const setDuration = (duration)=>{
+    updateDuration(duration);
   }
 
   
@@ -34,8 +49,16 @@ function App() {
     isPlayerOpen,
     setPlayerOpen,
     title,
-    setTitle }),
-    [title,isPlayerOpen])
+    setTitle, 
+    artist,
+    setArtist,
+    img,
+    setImg,
+    duration,
+    setDuration 
+    
+  }),
+    [title,isPlayerOpen,artist,img,duration])
 
   return (
     <AppContext.Provider value={appContextValue}>
