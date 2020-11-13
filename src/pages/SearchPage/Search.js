@@ -5,10 +5,14 @@ import { SpotifyContext } from 'components/SpotifyProvider'
 import Loupe from 'components/Menu/img/research.svg'
 import ResultContent from '../../components/ResultContent/ResultContent'
 import loading from '../../components/loading/loading'
+import PlayerAppearOnclick from '../../components/PlayerAppearOnclick/index'
 
 
 
 function Search() {
+
+    
+
     const [value , setValue] = useState('');
     const [firstSearch , setfirstSearch] = useState(false);
     const [loadingStatut , setloadingStatut] = useState(false);
@@ -31,41 +35,42 @@ function Search() {
       }, [spotifyApi,value])
       console.log(tracks)
     return(
-           <div className={style.PageSearch}>
+        <div className={style.PageSearch}>
 
-                    <div className={style.searchHeader}>
-                        <img alt="" className={style.searchHeader_loupe} src={Loupe}/>
-                        <input
-                            className={style.searchHeader_input}
-                            type="text"
-                            id="rechercher"
-                            name="rechercher"
-                            placeholder="Rechercher"
+            <div className={style.searchHeader}>
+                <img alt="" className={style.searchHeader_loupe} src={Loupe}/>
+                <input
+                    className={style.searchHeader_input}
+                    type="text"
+                    id="rechercher"
+                    name="rechercher"
+                    placeholder="Rechercher"
 
-                            onChange={(event) => {
-                                setValue(event.target.value)
-                                setfirstSearch(true)
-                            }}
-                        />
-                    </div>
-                    {tracks.length === 0 && firstSearch === true && loadingStatut === false &&(
-                        <p className={style.noResult}>Pas de résultat... :(</p>
-                    )}
-                    {loadingStatut === true &&(
-                        <loading />
-                    )}
-                    {tracks.map((track) => {
-                        return(
-                            <ResultContent
-                            img={track.album.images[2].url}
-                            title={track.name}
-                            category="Titre"
-                            />
-                        )
-                    })}
-           </div>
-            
-        );
+                    onChange={(event) => {
+                        setValue(event.target.value)
+                        setfirstSearch(true)
+                    }}
+                />
+            </div>
+            {tracks.length === 0 && firstSearch === true && loadingStatut === false &&(
+                <p className={style.noResult}>Pas de résultat... :(</p>
+            )}
+            {loadingStatut === true &&(
+                <loading />
+            )}
+            {tracks.map((track) => {
+                return(
+                    <ResultContent
+                    img={track.album.images[2].url}
+                    title={track.name}
+                    category="Titre"
+                    />
+                )
+            })}
+            <PlayerAppearOnclick/>
+        </div>
+        
+    );
   }
 
 export default Search

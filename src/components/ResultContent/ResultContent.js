@@ -1,9 +1,21 @@
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import Styles from './ResultContent.module.css'
 
 import option from './img/option.svg'
+import AppContext from '../../AppContext'
 
 const ResultContent = (prop) => {
+
+    const context = useContext(AppContext);
+    
+    
+
+    const handleClickSong = ()=>{
+        
+        
+        context.setPlayerOpen(context.isPlayerOpen = true)
+       
+    }
     console.log(prop.category)
 
     let imgClass;
@@ -16,7 +28,7 @@ const ResultContent = (prop) => {
 
 
     return (
-        <div className={Styles.content_result}>
+        <div onClick={handleClickSong} className={Styles.content_result}>
                 <img alt="" className={imgClass} src={prop.img}/>
 
                 <div className={Styles.text}>
