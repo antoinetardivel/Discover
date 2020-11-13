@@ -9,25 +9,18 @@ import PlayerAppearOnclick from '../PlayerAppearOnclick/index'
 
 
 
-class AccountComponent extends Component{
-    
- 
+const AccountComponent = ()=>{ 
+    return (
+        <div>
+            <BlurBanner/>
+            <AccountBanner/>
+            <AccountContent/>
+        </div>
 
+        
+    )
+}
 
-    render(){
-        return (
-            <div>
-
-                <BlurBanner/>
-                <AccountBanner/>
-                <AccountContent/>
-            </div>
-    
-            
-        )
-    }
-    
-  }
 
 
   export default AccountComponent

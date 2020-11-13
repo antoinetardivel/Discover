@@ -6,24 +6,18 @@ import AccountPlaylist from './AccountPlaylist'
 
 
 
-class AccountContent extends Component{
+const AccountContent = ()=>{
+    return (
+        <div className={styles.account_content_container}>
+            <h1 className={styles.morceaux_plus_ecoutes}>Morceaux les plus écoutés</h1>
+            <AccountEachSong/>
+            <BtnGradient/>
+            <AccountPlaylist/>
+        </div>   
+    )
+}
     
-    
-    render(){
-
-        return (
-            <div className={styles.account_content_container}>
-                <h1 className={styles.morceaux_plus_ecoutes}>Morceaux les plus écoutés</h1>
-                <AccountEachSong/>
-                <BtnGradient/>
-                <AccountPlaylist/>
-            </div>
-    
-            
-        )
-    }
-    
-  }
+  
 
 
-  export default AccountContent
+export default AccountContent
