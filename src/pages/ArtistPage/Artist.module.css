@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     background-color: #404040;
-    width: 100vw;
+    width: calc(100% + 6rem);
     margin-left: -3rem;
 }
 
@@ -25,7 +25,7 @@
     bottom: -10px;
     left: 0;
     height: 10px;
-    width: 100vw;
+    width: 100%;
     opacity: .15;
     background-image: linear-gradient(0, #404040, #040404);
 }

@@ -10,7 +10,7 @@ const spotifyApi = new SpotifyWebApi();
 
 const SpotifyProvider = ({ clientId, redirectUri, children }) => {
   useLoadSdk()
-  const [isReady, setIsReady] = useState(false)
+  const [IsReady, setIsReady] = useState(false)
   const token = useToken({ clientId, redirectUri })
   const { deviceId, player } = useDevice({ token })
   const contextValue = useMemo(() => ({
@@ -18,7 +18,7 @@ const SpotifyProvider = ({ clientId, redirectUri, children }) => {
     token,
     player,
     spotifyApi,
-    isReady
+    IsReady
   }), [token, deviceId, player])
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const SpotifyProvider = ({ clientId, redirectUri, children }) => {
 
   return (
     <Context.Provider value={contextValue}>
-      {(isReady && deviceId) && children}
+      {(IsReady && deviceId) && children}
     </Context.Provider>
   )
 }
