@@ -1,14 +1,6 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { SpotifyContext } from 'components/SpotifyProvider'
 import styles from './PlaylistList.module.css'
-import album1 from './img/album1.png'
-import album2 from './img/album2.png'
-import album3 from './img/album3.png'
-import album4 from './img/album4.png'
-import album5 from './img/album5.png'
-
-
-
-
 
     const PlaylistList = () => {
     
@@ -16,25 +8,46 @@ import album5 from './img/album5.png'
             return(
                 <div className={styles.each_playlist}>
                     <div>
-                        <img alt="" src={props.imgName}/>
-                        <p>{props.playlistName}</p>
+                        <img alt="" src={props.UrlImage}/>
+                        <p>{props.PlaylistName}</p>
                    </div>
                 </div>
             )
         }
+
+        const [playlists , setPlaylists] = useState([]);
+        const [value , setValue] = useState(false);
+        const { spotifyApi } = useContext(SpotifyContext);
+        useEffect(() => {
+            const searchInfos = async () => {
+                const playlistsFounded = await spotifyApi.getUserPlaylists();
+                console.log(playlistsFounded)
+                setPlaylists(playlistsFounded);
+                setValue(true);
+            }
+            searchInfos();
+        }, [spotifyApi,value])
      
-    
+        if (value){
         return (
             <div className={styles.playlist_container}>
-                <EachPlaylist imgName={album1} playlistName="Electro" />
-                <EachPlaylist imgName={album2} playlistName="Chill" />
-                <EachPlaylist imgName={album3} playlistName="Rap" />
-                <EachPlaylist imgName={album4} playlistName="Foals remix" />
-                <EachPlaylist imgName={album5} playlistName="top 10" />
+                    {playlists.items.map((listElement,i) => {
+                        return(
+                            <EachPlaylist key={i}
+                                // UrlImage={listElement.images[0].url}
+                                PlaylistName={listElement.name}
+                                PlaylistId={listElement.id}
+                            />
+                        )
+                    })}
             </div>
     
             
-        )
+        )}else{
+            return(
+                <div className={styles.playlist_container}></div>
+            )
+        }
         
         
       }

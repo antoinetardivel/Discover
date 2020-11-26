@@ -65,23 +65,8 @@ function Artist(props) {
 
     return(
         <div>
-            {/* <BannerArtist imageArtist={artist.images[1].url} pArtist='oui' /> */}
-            {/* <h1 className={styles.artist_title}>{artist.name}</h1>
-            <img src={artist.images[0].url} alt="Image profil artiste"/> */}
             {value === true &&(
                     <React.Fragment>
-                    {/* <h1 className={styles.artist_title}>{artist.name}</h1> */}
-                    {/* <img src={artist.images[0].url} alt="Image profil artiste" /> */}
-
-
-
-
-
-
-
-
-
-
 
                     <BannerArtist imageArtist={artist.images[1].url} pArtist='oui' />
                     <div className={styles.artist_content_container}>
@@ -135,41 +120,6 @@ function Artist(props) {
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     </React.Fragment>
             )}
 

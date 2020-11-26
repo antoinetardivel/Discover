@@ -29,10 +29,11 @@
 
 .titreMusic{
     font-size: 16px;
-    margin-left: 31vw;
     margin-top: 1vh;
     font-weight: lighter;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 1vh 10vw 0 10vw;
 }
 
 .BandeauArtist{

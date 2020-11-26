@@ -9,7 +9,8 @@ import AccountPlaylist from './AccountPlaylist'
 const AccountContent = ()=>{
     return (
         <div className={styles.account_content_container}>
-            <h1 className={styles.morceaux_plus_ecoutes}>Morceaux les plus écoutés</h1>
+            <p className={styles.user_name}>Prénom Nom</p>
+            <p className={styles.morceaux_plus_ecoutes}>Morceaux les plus écoutés</p>
             <AccountEachSong/>
             <BtnGradient/>
             <AccountPlaylist/>

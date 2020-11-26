@@ -30,7 +30,7 @@ const MusicIcon = (prop) => {
           </div>
         
         
-        <div id={prop.artistName} className={Popup}><PopUpTop10 src={prop.src} imageArtist={prop.imageArtist} presArtist={prop.presArtist} musicName={prop.musicName} artistName={prop.artistName}  >
+        <div id={prop.artistName} className={Popup}><PopUpTop10 src={prop.src} imageArtist={prop.imageArtist} presArtist={prop.presArtist} musicName={prop.musicName} artistName={prop.artistName} artistId={prop.artistId}  >
             <div onClick={popUpTop10}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37">
                     <g   id="Groupe_209" data-name="Groupe 209" transform="translate(-169 -560)">

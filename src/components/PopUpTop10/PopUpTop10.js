@@ -6,6 +6,9 @@ import BoutonAbonnement from 'components/BoutonAbonnement/BoutonAbonnement'
 
 
 const PopUpTop10 = (prop) => {
+
+let link = '/Artiste/' + prop.artistId
+
   return (
       <div className={Styles.popUpConener} >
           <div className={Styles.popUpBox}>
@@ -21,7 +24,7 @@ const PopUpTop10 = (prop) => {
                   </div>
               </div>
                 <p className={Styles.presArtist} >{prop.presArtist}</p>
-                <button className={Styles.btnDisco}><Link className={Styles.linkBtnDico}  to={{pathname: '/Artiste', aboutProps:{ artistName: prop.artistName, imageArtist: prop.imageArtist } }}> Voir la discographie </Link></button>
+                <button className={Styles.btnDisco}><Link className={Styles.linkBtnDico}  to={link}> Voir la discographie </Link></button>
                 <div className={Styles.croixRetour}>
                     {prop.children}
                 </div>
