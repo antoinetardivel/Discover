@@ -30,7 +30,9 @@ function Top10() {
             const artist = await spotifyApi.getArtist(track.artists[0].id);
             setArtists(artists => [...artists, artist.images[0].url]);
         }
-        for (let i = 0; i < top10.length; i++) {
+        setTracks(tracks => []);
+        setArtists(artists => []);
+        for (let i = 0; i < (top10.length); i++) {
             searchTracks(i);
         }
     }, [spotifyApi])
