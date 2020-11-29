@@ -46,19 +46,19 @@ function Top10() {
                 <BoutonAbonnement /> 
             </div>
             <div className={Styles.MusicsContener} >
-                {tracks.items.map((track,i) => {
-                        return(
-                            <div key={i} className={Styles.topElement}>
-                                <MusicIcon src={track.album.images[1].url} 
-                                    imageArtist={artists[i]}
-                                    presArtist="Moody, de son vrai prénom Loïc, est originaire de Agen, et a commencé la musique à l'âge de 15 ans. Auteur de l'EP  Flawless Portrait, il a publié son dernier..." 
-                                    musicName={track.name}
-                                    artistName={track.artists[0].name}  
-                                    artistId={track.artists[0].id}
-                                    />
-                            </div>
-                        )
-                    })}
+                {tracks.map((track,i) => {
+                    return(
+                        <div key={i} className={Styles.topElement}>
+                            <MusicIcon src={track.album.images[1].url} 
+                                imageArtist={artists[i]}
+                                presArtist="Moody, de son vrai prénom Loïc, est originaire de Agen, et a commencé la musique à l'âge de 15 ans. Auteur de l'EP  Flawless Portrait, il a publié son dernier..." 
+                                musicName={track.name}
+                                artistName={track.artists[0].name}  
+                                artistId={track.artists[0].id}
+                                />
+                        </div>
+                    )
+                })}
             </div>
             
         </div>
