@@ -9,3 +9,14 @@
     transform: scale(1.05) translateY(30px);
     margin-bottom: 30px;
 }
+@media screen and (max-width: 365px) {
+    .playlist_container{
+        margin-top: 30px;;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        transform: scale(1.05) translateY(30px);
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+}

@@ -19,4 +19,11 @@
         margin-bottom: 10px;
         cursor: pointer;
         font-family: Poppins;
+        transition-duration: 0.7;
+    }
+    .ArtistName:hover{
+        text-decoration: underline;
+    }
+    .block_container:hover .ArtistName{
+        text-decoration: underline;
     }

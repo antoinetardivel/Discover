@@ -4,10 +4,11 @@ import styles from './ArtistBubble.module.css'
 
 
 const ArtistBubble = (prop) => {
+  let link = '/Artiste/' + prop.artistId
   return (
     <div className={styles.block_container}>
-      <img className={styles.ArtistPhoto} src={prop.src} alt={""}/>
-      <p className={styles.ArtistName}><Link className={styles.ArtistName} to={{pathname: '/Artiste', aboutProps:{ artistName: prop.artistName, imageArtist: prop.imageArtist } }}>{prop.artistName}</Link></p>
+      <Link to={link}><img className={styles.ArtistPhoto} src={prop.src} alt={""}/></Link>
+      <p className={styles.ArtistName}><Link className={styles.ArtistName} to={link}>{prop.artistName}</Link></p>
     </div>
   )
 }

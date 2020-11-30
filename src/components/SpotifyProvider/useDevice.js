@@ -12,7 +12,7 @@ const useDevice = ({ token }) => {
       }
 
       const player = new window.Spotify.Player({
-        name: 'App player',
+        name: '10Cover',
         getOAuthToken: cb => { cb(token); }
       });
     

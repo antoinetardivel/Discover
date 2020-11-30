@@ -52,6 +52,8 @@
         margin-left: 50%;
         transform: translate(-50%, -50%);
         width: 60px;
+        cursor: pointer;
+        transition-duration: 0.7;
     }
     .cover4{
         width: 28.265vw;
@@ -71,4 +73,7 @@
         margin-left: auto;
         border-radius: 17%;
         filter: brightness(0.38);
+    }
+    .PlayButton:hover{
+        filter: brightness(0.5);
     }

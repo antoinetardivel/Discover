@@ -1,41 +1,58 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { SpotifyContext } from 'components/SpotifyProvider'
+import firebase from '../../firebase';
 
 import BoutonAbonnement from 'components/BoutonAbonnement/BoutonAbonnement'
+
 import Styles from './Top10.module.css'
 import PlayTop10 from 'components/PlayTop10/PlayTop10'
 import MusicIcon from 'components/MusicIcon/MusicIcon'
 
 function Top10() {
 
-    const top10 = [
-        "2OrqZkfSI3GTDZAje4T5Sm",/*1*/
-        "4WxqOuzA0OG1851xcChR73",/*2*/
-        "2zPcVDSpYNVKQ5c7jR7MXj",/*3*/
-        "0p1Ai9W1iVc15y0U6TEJCU",/*4*/
-        "76HS9cPRZGtXnbfgJkWW7r",/*5*/
-        "3S89XqE7SxSgzAUhgCigAk",/*6*/
-        "39UtiRhuzDEvj1CD39QvjG",/*7*/
-        "6K9QPIt8AR422heY9O372w",/*8*/
-        "60AY8gRW9BjLgxeuqFVbTs",/*9*/
-        "7bkxJOCyc7dQyQQrOcwXdF"/*10*/
-    ];
+    // const top10 = [
+    //     "2OrqZkfSI3GTDZAje4T5Sm",/*1*/
+    //     "4WxqOuzA0OG1851xcChR73",/*2*/
+    //     "2zPcVDSpYNVKQ5c7jR7MXj",/*3*/
+    //     "0p1Ai9W1iVc15y0U6TEJCU",/*4*/
+    //     "76HS9cPRZGtXnbfgJkWW7r",/*5*/
+    //     "3S89XqE7SxSgzAUhgCigAk",/*6*/
+    //     "39UtiRhuzDEvj1CD39QvjG",/*7*/
+    //     "6K9QPIt8AR422heY9O372w",/*8*/
+    //     "60AY8gRW9BjLgxeuqFVbTs",/*9*/
+    //     "7bkxJOCyc7dQyQQrOcwXdF"/*10*/
+    // ];
+    const [value , setValue] = useState(false);
+    const [top10 , setTop] = useState([]);
     const [tracks , setTracks] = useState([]);
     const [artists , setArtists] = useState([]);
     const { spotifyApi } = useContext(SpotifyContext);
-    useEffect(() => {
+    useEffect(() => { 
+        const tracksRef = firebase.database().ref('tracks');
+        tracksRef.on("value",(snapshot) => {
+            let studentlist = [];
+            snapshot.forEach(snap => {
+                studentlist.push(snap.val())
+            });
+            setTop(studentlist);
+            setValue(true);
+        });
+
         const searchTracks = async (i) => {
-            const track = await spotifyApi.getTrack(top10[i]);
+            const track = await spotifyApi.getTrack(top10[i].id);
             setTracks(tracks => [...tracks, track]);
             const artist = await spotifyApi.getArtist(track.artists[0].id);
             setArtists(artists => [...artists, artist.images[0].url]);
         }
+
+
+
         setTracks(tracks => []);
         setArtists(artists => []);
         for (let i = 0; i < (top10.length); i++) {
             searchTracks(i);
         }
-    }, [spotifyApi])
+    },[spotifyApi,value])
 
     return(
         <div className={Styles.top10Contener}>
